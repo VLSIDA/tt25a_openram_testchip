@@ -35,9 +35,9 @@ async def test_project(dut):
     dut._log.info("Start")
 
     ADDR_WIDTH = 9
-    ADDR_VAL = 0x101
+    ADDR_VAL = 0x123
     DATA_WIDTH = 33
-    DATA_VAL = 0x1234156789
+    DATA_VAL = 0x123456789
     SCAN_FF_WIDTH = (ADDR_WIDTH + DATA_WIDTH + DATA_WIDTH)*2
     
     ui_in = LogicArray("10000000")
@@ -79,9 +79,11 @@ async def test_project(dut):
     await ClockCycles(dut.clk, 16)
     
     # scan in scan reg
+    ui_in[0] = 0 # scan in
     ui_in[1] = 1 # scan enable
     ui_in[2] = 1 # scan mode
-    ui_in[0] = 1 # scan in
+    await ClockCycles(dut.clk, 4)
+
     dut._log.info("scan in addr")
     addr_bin = f'{ADDR_VAL:09b}'
     data_bin = f'{DATA_VAL:33b}'
@@ -122,24 +124,25 @@ async def test_project(dut):
     ui_in[0] = 0 #scan_in
     ui_in[1] = 1 #scan enable
     ui_in[2] = 1 #SCAN MODE
-    
+    await ClockCycles(dut.clk, 4)
+
     for i in range(0, ADDR_WIDTH):
         found = dut.uo_out.value & 1
-        expect = int(addr_bin[::-1][i])
+        expect = int(addr_bin[i])
         dut._log.info("checking addr bit {} found {} expected {}".format(i,found,expect))
         assert found == expect
         await ClockCycles(dut.clk, 4)
         
     for i in range(0, DATA_WIDTH):
         found = dut.uo_out.value & 1
-        expect = int(data_bin[::-1][i])
+        expect = int(data_bin[i])
         dut._log.info("checking data out {} found {} expected {}".format(i,found,expect))
         assert found == expect
         await ClockCycles(dut.clk, 4)
         
     for i in range(0, DATA_WIDTH):
         found = dut.uo_out.value & 1
-        expect = int(data_bin[::-1][i])
+        expect = int(data_bin[i])
         dut._log.info("checking data in {} found {} expected {}".format(i,found,expect))
         assert found == expect
         await ClockCycles(dut.clk, 4)
