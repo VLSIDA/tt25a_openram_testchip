@@ -1,5 +1,6 @@
 `default_nettype none
-`timescale 1ns / 1ps
+`define SIMULATION
+//`timescale 1ns / 1ps
 
 /* This testbench just instantiates the module and makes some convenient wires
    that can be driven / tested by the cocotb test.py.
@@ -28,7 +29,7 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  tt_um_example user_project (
+  tt_um_openram_top user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
