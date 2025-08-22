@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "modules": {
+      "\\tt_um_openram_top": {
+         "num_wires":         403,
+         "num_wire_bits":     470,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         395,
+         "area":              3783.628800,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_MUX_": 249,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         403,
+         "num_wire_bits":     470,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         395,
+         "area":              3783.628800,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_MUX_": 249,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+}
+

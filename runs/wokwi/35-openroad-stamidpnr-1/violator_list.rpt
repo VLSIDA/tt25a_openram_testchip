@@ -1,0 +1,80 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold in-reg] rst_n -> _571_/RESET_B : -0.548788
+[hold in-reg] rst_n -> _559_/RESET_B : -0.548774
+[hold in-reg] rst_n -> _567_/RESET_B : -0.548765
+[hold in-reg] rst_n -> _569_/RESET_B : -0.548720
+[hold in-reg] rst_n -> _627_/RESET_B : -0.540287
+[hold in-reg] rst_n -> _625_/RESET_B : -0.540275
+[hold in-reg] rst_n -> _563_/RESET_B : -0.540187
+[hold in-reg] rst_n -> _557_/RESET_B : -0.540169
+[hold in-reg] rst_n -> _613_/RESET_B : -0.540110
+[hold in-reg] rst_n -> _577_/RESET_B : -0.540044
+[hold in-reg] rst_n -> _615_/RESET_B : -0.539799
+[hold in-reg] rst_n -> _617_/RESET_B : -0.539785
+[hold in-reg] rst_n -> _555_/RESET_B : -0.539705
+[hold in-reg] rst_n -> _511_/RESET_B : -0.534537
+[hold in-reg] rst_n -> _507_/RESET_B : -0.534460
+[hold in-reg] rst_n -> _509_/RESET_B : -0.534450
+[hold in-reg] rst_n -> _619_/RESET_B : -0.533058
+[hold in-reg] rst_n -> _597_/RESET_B : -0.532945
+[hold in-reg] rst_n -> _643_/RESET_B : -0.342638
+[hold in-reg] rst_n -> _633_/RESET_B : -0.342608
+[hold in-reg] rst_n -> _545_/RESET_B : -0.336127
+[hold in-reg] rst_n -> _605_/RESET_B : -0.336102
+[hold in-reg] rst_n -> _531_/RESET_B : -0.326906
+[hold in-reg] rst_n -> _585_/RESET_B : -0.326688
+[hold in-reg] rst_n -> _539_/RESET_B : -0.325516
+[hold in-reg] rst_n -> _599_/RESET_B : -0.315615
+[hold in-reg] rst_n -> _603_/RESET_B : -0.315604
+[hold in-reg] rst_n -> _601_/RESET_B : -0.315440
+[hold in-reg] rst_n -> _591_/RESET_B : -0.303199
+[hold in-reg] rst_n -> _593_/RESET_B : -0.302666
+[hold in-reg] rst_n -> _595_/RESET_B : -0.302573
+[hold in-reg] rst_n -> _621_/RESET_B : -0.302386
+[hold in-reg] rst_n -> _565_/RESET_B : -0.300719
+[hold in-reg] rst_n -> _641_/RESET_B : -0.300434
+[hold in-reg] rst_n -> _637_/RESET_B : -0.300340
+[hold in-reg] rst_n -> _639_/RESET_B : -0.300332
+[hold in-reg] rst_n -> _635_/RESET_B : -0.294845
+[hold in-reg] rst_n -> _561_/RESET_B : -0.293610
+[hold in-reg] rst_n -> _629_/RESET_B : -0.284887
+[hold in-reg] rst_n -> _631_/RESET_B : -0.284858
+[hold in-reg] rst_n -> _623_/RESET_B : -0.282238
+[hold in-reg] rst_n -> _551_/RESET_B : -0.282043
+[hold in-reg] rst_n -> _611_/RESET_B : -0.281966
+[hold in-reg] rst_n -> _549_/RESET_B : -0.281713
+[hold in-reg] rst_n -> _553_/RESET_B : -0.281095
+[hold in-reg] rst_n -> _501_/RESET_B : -0.274481
+[hold in-reg] rst_n -> _503_/RESET_B : -0.274269
+[hold in-reg] rst_n -> _505_/RESET_B : -0.274258
+[hold in-reg] rst_n -> _575_/RESET_B : -0.268740
+[hold in-reg] rst_n -> _573_/RESET_B : -0.268652
+[hold in-reg] ui_in[1] -> _619_/D : -0.176798
+[hold in-reg] ui_in[1] -> _597_/D : -0.176616
+[hold in-reg] rst_n -> _579_/RESET_B : -0.137299
+[hold in-reg] rst_n -> _581_/RESET_B : -0.137278
+[hold in-reg] rst_n -> _543_/RESET_B : -0.137224
+[hold in-reg] rst_n -> _609_/RESET_B : -0.097724
+[hold in-reg] rst_n -> _607_/RESET_B : -0.097629
+[hold in-reg] rst_n -> _547_/RESET_B : -0.097608
+[hold in-reg] rst_n -> _541_/RESET_B : -0.097436
+[hold in-reg] rst_n -> _533_/RESET_B : -0.081412
+[hold in-reg] rst_n -> _529_/RESET_B : -0.081411
+[hold in-reg] rst_n -> _535_/RESET_B : -0.081204
+[hold in-reg] rst_n -> _583_/RESET_B : -0.080518
+[hold in-reg] rst_n -> _537_/RESET_B : -0.080280
+[hold in-reg] rst_n -> _513_/RESET_B : -0.048888
+[hold in-reg] rst_n -> _515_/RESET_B : -0.048830
+[hold in-reg] rst_n -> _589_/RESET_B : -0.048791
+[hold in-reg] rst_n -> _527_/RESET_B : -0.048163
+[hold in-reg] rst_n -> _525_/RESET_B : -0.048108
+[hold in-reg] ui_in[2] -> _627_/D : -0.002686
+Writing metric timing__hold_vio__count__corner:nom_tt_025C_1v80: 70
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_1v80: 0.220518
+Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__setup_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_1v80: 9998.972656
+Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_1v80: 0

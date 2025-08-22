@@ -1,0 +1,4 @@
+
+20. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\scan_cell_2ph.\scan_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
+No latch inferred for signal `\scan_cell_2ph.\data_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.

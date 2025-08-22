@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /workspaces/tt25a_openram_testchip/runs/wokwi/42-openroad-stamidpnr-3/or_metrics_out.json /nix/store/ib5in1gi5d1gw05g161q4ab55s6w006g-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/openroad/sta/corner.tcl

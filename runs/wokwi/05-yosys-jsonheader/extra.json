@@ -1,0 +1,1 @@
+{"blackbox_models": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/48678ef3245f4d87a07c526d46588fac.bb.v", "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v"], "libs_synth": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib"]}

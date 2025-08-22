@@ -1,0 +1,82 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold in-reg] rst_n -> _615_/RESET_B : -0.216374
+[hold in-reg] rst_n -> _625_/RESET_B : -0.215708
+[hold in-reg] rst_n -> _549_/RESET_B : -0.215511
+[hold in-reg] rst_n -> _555_/RESET_B : -0.215455
+[hold in-reg] rst_n -> _553_/RESET_B : -0.215431
+[hold in-reg] rst_n -> _617_/RESET_B : -0.215419
+[hold in-reg] rst_n -> _551_/RESET_B : -0.215396
+[hold in-reg] rst_n -> _627_/RESET_B : -0.215131
+[hold in-reg] rst_n -> _563_/RESET_B : -0.214682
+[hold in-reg] rst_n -> _561_/RESET_B : -0.214634
+[hold in-reg] rst_n -> _559_/RESET_B : -0.214601
+[hold in-reg] rst_n -> _557_/RESET_B : -0.214423
+[hold in-reg] rst_n -> _629_/RESET_B : -0.214210
+[hold in-reg] rst_n -> _635_/RESET_B : -0.213940
+[hold in-reg] rst_n -> _623_/RESET_B : -0.213921
+[hold in-reg] rst_n -> _631_/RESET_B : -0.213887
+[hold in-reg] rst_n -> _633_/RESET_B : -0.213760
+[hold in-reg] rst_n -> _565_/RESET_B : -0.213709
+[hold in-reg] rst_n -> _567_/RESET_B : -0.213675
+[hold in-reg] rst_n -> _569_/RESET_B : -0.213670
+[hold in-reg] rst_n -> _643_/RESET_B : -0.213469
+[hold in-reg] rst_n -> _571_/RESET_B : -0.213365
+[hold in-reg] rst_n -> _641_/RESET_B : -0.213117
+[hold in-reg] rst_n -> _639_/RESET_B : -0.212691
+[hold in-reg] rst_n -> _637_/RESET_B : -0.212680
+[hold in-reg] rst_n -> _577_/RESET_B : -0.212403
+[hold in-reg] rst_n -> _613_/RESET_B : -0.212257
+[hold in-reg] rst_n -> _501_/RESET_B : -0.212200
+[hold in-reg] rst_n -> _573_/RESET_B : -0.212185
+[hold in-reg] rst_n -> _511_/RESET_B : -0.212160
+[hold in-reg] rst_n -> _575_/RESET_B : -0.212103
+[hold in-reg] rst_n -> _503_/RESET_B : -0.211912
+[hold in-reg] rst_n -> _505_/RESET_B : -0.211889
+[hold in-reg] rst_n -> _507_/RESET_B : -0.211821
+[hold in-reg] rst_n -> _509_/RESET_B : -0.211817
+[hold in-reg] rst_n -> _611_/RESET_B : -0.211467
+[hold in-reg] rst_n -> _607_/RESET_B : -0.209941
+[hold in-reg] rst_n -> _609_/RESET_B : -0.209902
+[hold in-reg] rst_n -> _547_/RESET_B : -0.209861
+[hold in-reg] rst_n -> _579_/RESET_B : -0.208590
+[hold in-reg] rst_n -> _543_/RESET_B : -0.208294
+[hold in-reg] rst_n -> _541_/RESET_B : -0.208255
+[hold in-reg] rst_n -> _583_/RESET_B : -0.208109
+[hold in-reg] rst_n -> _539_/RESET_B : -0.207889
+[hold in-reg] rst_n -> _545_/RESET_B : -0.207887
+[hold in-reg] rst_n -> _605_/RESET_B : -0.207886
+[hold in-reg] rst_n -> _581_/RESET_B : -0.207860
+[hold in-reg] rst_n -> _521_/RESET_B : -0.207693
+[hold in-reg] rst_n -> _523_/RESET_B : -0.207360
+[hold in-reg] rst_n -> _525_/RESET_B : -0.207106
+[hold in-reg] rst_n -> _531_/RESET_B : -0.206770
+[hold in-reg] rst_n -> _533_/RESET_B : -0.206481
+[hold in-reg] rst_n -> _537_/RESET_B : -0.205509
+[hold in-reg] rst_n -> _585_/RESET_B : -0.205468
+[hold in-reg] rst_n -> _535_/RESET_B : -0.205027
+[hold in-reg] rst_n -> _529_/RESET_B : -0.204884
+[hold in-reg] rst_n -> _587_/RESET_B : -0.203954
+[hold in-reg] rst_n -> _527_/RESET_B : -0.203906
+[hold in-reg] rst_n -> _519_/RESET_B : -0.203686
+[hold in-reg] rst_n -> _517_/RESET_B : -0.203644
+[hold in-reg] rst_n -> _515_/RESET_B : -0.202899
+[hold in-reg] rst_n -> _513_/RESET_B : -0.202425
+[hold in-reg] rst_n -> _603_/RESET_B : -0.201479
+[hold in-reg] rst_n -> _589_/RESET_B : -0.201259
+[hold in-reg] rst_n -> _601_/RESET_B : -0.200550
+[hold in-reg] rst_n -> _599_/RESET_B : -0.200028
+[hold in-reg] rst_n -> _591_/RESET_B : -0.199818
+[hold in-reg] rst_n -> _597_/RESET_B : -0.199248
+[hold in-reg] rst_n -> _619_/RESET_B : -0.199114
+[hold in-reg] rst_n -> _593_/RESET_B : -0.198956
+[hold in-reg] rst_n -> _595_/RESET_B : -0.198873
+[hold in-reg] rst_n -> _621_/RESET_B : -0.198589
+Writing metric timing__hold_vio__count__corner:nom_tt_025C_1v80: 72
+Writing metric timing__hold_r2r__ws__corner:nom_tt_025C_1v80: 0.337814
+Writing metric timing__hold_r2r_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__setup_vio__count__corner:nom_tt_025C_1v80: 0
+Writing metric timing__setup_r2r__ws__corner:nom_tt_025C_1v80: 9998.937500
+Writing metric timing__setup_r2r_vio__count__corner:nom_tt_025C_1v80: 0

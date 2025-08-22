@@ -1,0 +1,1130 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v' to AST representation.
+Generating RTLIL representation for module `\sky130_sram_256B_1rw_32x64'.
+Successfully finished Verilog frontend.
+[INFO] Using SDC file '/workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+3. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/defs.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/defs.v' to AST representation.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/project.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/project.v' to AST representation.
+Storing AST representation for module `$abstract\scan_cell_2ph'.
+Storing AST representation for module `$abstract\scan_chain_2ph'.
+Storing AST representation for module `$abstract\tt_um_openram_top'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v' to AST representation.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v' to AST representation.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v' to AST representation.
+Successfully finished Verilog frontend.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+9. Executing AST frontend in derive mode using pre-parsed AST for module `\tt_um_openram_top'.
+Generating RTLIL representation for module `\tt_um_openram_top'.
+
+9.1. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Parameter 1 (\CHAIN_LENGTH) = 72
+
+9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_chain_2ph'.
+Parameter 1 (\CHAIN_LENGTH) = 72
+Generating RTLIL representation for module `$paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000'.
+
+9.3. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
+
+9.4. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_cell_2ph'.
+Generating RTLIL representation for module `\scan_cell_2ph'.
+
+9.5. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
+Used module:         \scan_cell_2ph
+
+9.6. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
+Used module:         \scan_cell_2ph
+Removing unused module `$abstract\tt_um_openram_top'.
+Removing unused module `$abstract\scan_chain_2ph'.
+Removing unused module `$abstract\scan_cell_2ph'.
+Removed 3 unused modules.
+Renaming module tt_um_openram_top to tt_um_openram_top.
+
+10. Generating Graphviz representation of design.
+Writing dot description to `/workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/hierarchy.dot'.
+Dumping module tt_um_openram_top to page 1.
+
+11. Executing TRIBUF pass.
+
+12. Executing HIERARCHY pass (managing design hierarchy).
+
+12.1. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
+Used module:         \scan_cell_2ph
+
+12.2. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
+Used module:         \scan_cell_2ph
+Removed 0 unused modules.
+
+13. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+14. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9 in module scan_cell_2ph.
+Marked 2 switch rules as full_case in process $proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7 in module scan_cell_2ph.
+Removed a total of 0 dead cases.
+
+15. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
+
+16. Executing PROC_INIT pass (extract init attributes).
+
+17. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
+Found async reset \rst_n in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
+
+18. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~4 debug messages>
+
+19. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
+Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
+     1/1: $0\secondary_ff[0:0]
+Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
+     1/1: $0\primary_ff[0:0]
+
+20. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\scan_cell_2ph.\scan_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
+No latch inferred for signal `\scan_cell_2ph.\data_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
+
+21. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\scan_cell_2ph.\secondary_ff' using process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
+  created $adff cell `$procdff$26' with positive edge clock and positive level reset.
+Creating register for signal `\scan_cell_2ph.\primary_ff' using process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
+  created $adff cell `$procdff$31' with positive edge clock and positive level reset.
+
+22. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
+Found and cleaned up 2 empty switches in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
+Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
+Found and cleaned up 2 empty switches in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
+Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
+Cleaned up 4 empty switches.
+
+24. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_openram_top...
+Checking module $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000...
+Checking module scan_cell_2ph...
+Found and reported 0 problems.
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000.
+Optimizing module scan_cell_2ph.
+<suppressed ~4 debug messages>
+
+26. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000.
+Deleting now unused module scan_cell_2ph.
+<suppressed ~73 debug messages>
+
+27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 288 unused cells and 1009 unused wires.
+<suppressed ~289 debug messages>
+
+29. Executing OPT pass (performing simple optimizations).
+
+29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+29.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~144 debug messages>
+
+29.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+29.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+29.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+29.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+29.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+29.9. Finished OPT passes. (There is nothing left to do.)
+
+30. Executing FSM pass (extract and optimize FSM).
+
+30.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+30.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+30.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+30.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+30.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+30.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+30.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+30.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+31. Executing OPT pass (performing simple optimizations).
+
+31.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+31.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+31.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~144 debug messages>
+
+31.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+31.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+31.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\scan_chain.\scan_cells[9].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[9].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[9].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[9].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[9].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[9].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[8].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[8].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[8].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[8].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[8].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[8].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[7].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[7].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[7].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[7].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[7].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[7].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[71].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[71].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[71].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[71].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[71].scan_cell.primary_ff, Q = \scan_chain.scan_cells[71].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[70].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[70].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[70].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[70].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[70].scan_cell.primary_ff, Q = \scan_chain.scan_cells[70].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[6].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[6].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[6].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[6].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[6].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[6].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[69].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[69].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[69].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[69].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[69].scan_cell.primary_ff, Q = \scan_chain.scan_cells[69].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[68].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[68].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[68].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[68].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[68].scan_cell.primary_ff, Q = \scan_chain.scan_cells[68].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[67].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[67].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[67].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[67].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[67].scan_cell.primary_ff, Q = \scan_chain.scan_cells[67].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[66].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[66].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[66].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[66].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[66].scan_cell.primary_ff, Q = \scan_chain.scan_cells[66].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[65].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[65].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[65].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[65].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[65].scan_cell.primary_ff, Q = \scan_chain.scan_cells[65].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[64].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[64].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[64].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[64].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[64].scan_cell.primary_ff, Q = \scan_chain.scan_cells[64].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[63].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[63].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[63].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[63].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[63].scan_cell.primary_ff, Q = \scan_chain.scan_cells[63].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[62].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[62].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[62].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[62].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[62].scan_cell.primary_ff, Q = \scan_chain.scan_cells[62].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[61].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[61].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[61].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[61].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[61].scan_cell.primary_ff, Q = \scan_chain.scan_cells[61].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[60].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[60].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[60].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[60].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[60].scan_cell.primary_ff, Q = \scan_chain.scan_cells[60].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[5].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[5].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[5].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[5].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[5].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[5].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[59].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[59].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[59].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[59].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[59].scan_cell.primary_ff, Q = \scan_chain.scan_cells[59].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[58].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[58].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[58].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[58].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[58].scan_cell.primary_ff, Q = \scan_chain.scan_cells[58].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[57].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[57].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[57].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[57].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[57].scan_cell.primary_ff, Q = \scan_chain.scan_cells[57].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[56].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[56].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[56].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[56].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[56].scan_cell.primary_ff, Q = \scan_chain.scan_cells[56].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[55].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[55].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[55].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[55].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[55].scan_cell.primary_ff, Q = \scan_chain.scan_cells[55].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[54].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[54].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[54].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[54].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[54].scan_cell.primary_ff, Q = \scan_chain.scan_cells[54].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[53].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[53].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[53].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[53].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[53].scan_cell.primary_ff, Q = \scan_chain.scan_cells[53].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[52].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[52].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[52].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[52].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[52].scan_cell.primary_ff, Q = \scan_chain.scan_cells[52].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[51].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[51].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[51].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[51].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[51].scan_cell.primary_ff, Q = \scan_chain.scan_cells[51].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[50].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[50].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[50].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[50].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[50].scan_cell.primary_ff, Q = \scan_chain.scan_cells[50].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[4].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[4].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[4].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[4].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[4].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[4].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[49].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[49].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[49].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[49].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[49].scan_cell.primary_ff, Q = \scan_chain.scan_cells[49].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[48].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[48].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[48].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[48].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[48].scan_cell.primary_ff, Q = \scan_chain.scan_cells[48].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[47].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[47].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[47].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[47].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[47].scan_cell.primary_ff, Q = \scan_chain.scan_cells[47].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[46].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[46].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[46].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[46].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[46].scan_cell.primary_ff, Q = \scan_chain.scan_cells[46].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[45].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[45].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[45].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[45].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[45].scan_cell.primary_ff, Q = \scan_chain.scan_cells[45].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[44].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[44].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[44].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[44].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[44].scan_cell.primary_ff, Q = \scan_chain.scan_cells[44].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[43].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[43].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[43].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[43].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[43].scan_cell.primary_ff, Q = \scan_chain.scan_cells[43].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[42].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[42].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[42].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[42].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[42].scan_cell.primary_ff, Q = \scan_chain.scan_cells[42].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[41].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[41].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[41].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[41].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[41].scan_cell.primary_ff, Q = \scan_chain.scan_cells[41].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[40].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[40].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[40].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[40].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[40].scan_cell.primary_ff, Q = \scan_chain.scan_cells[40].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[3].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[3].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[3].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[3].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[3].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[3].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[39].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[39].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[39].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[39].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[39].scan_cell.primary_ff, Q = \scan_chain.scan_cells[39].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[38].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[38].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[38].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[38].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[38].scan_cell.primary_ff, Q = \scan_chain.scan_cells[38].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[37].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[37].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[37].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[37].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[37].scan_cell.primary_ff, Q = \scan_chain.scan_cells[37].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[36].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[36].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[36].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[36].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[36].scan_cell.primary_ff, Q = \scan_chain.scan_cells[36].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[35].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[35].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[35].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[35].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[35].scan_cell.primary_ff, Q = \scan_chain.scan_cells[35].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[34].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[34].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[34].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[34].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[34].scan_cell.primary_ff, Q = \scan_chain.scan_cells[34].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[33].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[33].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[33].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[33].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = \scan_chain.scan_cells[33].scan_cell.primary_ff, Q = \scan_chain.scan_cells[33].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[32].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[32].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[32].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[32].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[32].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[32].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[31].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[31].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[31].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[31].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[31].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[31].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[30].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[30].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[30].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[30].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[30].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[30].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[2].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[2].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[2].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[2].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[2].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[2].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[29].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[29].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[29].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[29].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[29].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[29].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[28].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[28].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[28].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[28].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[28].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[28].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[27].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[27].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[27].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[27].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[27].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[27].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[26].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[26].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[26].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[26].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[26].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[26].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[25].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[25].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[25].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[25].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[25].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[25].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[24].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[24].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[24].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[24].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[24].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[24].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[23].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[23].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[23].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[23].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[23].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[23].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[22].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[22].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[22].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[22].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[22].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[22].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[21].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[21].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[21].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[21].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[21].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[21].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[20].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[20].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[20].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[20].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[20].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[20].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[1].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[1].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[1].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[1].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[1].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[1].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[19].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[19].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[19].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[19].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[19].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[19].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[18].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[18].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[18].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[18].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[18].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[18].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[17].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[17].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[17].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[17].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[17].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[17].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[16].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[16].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[16].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[16].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[16].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[16].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[15].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[15].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[15].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[15].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[15].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[15].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[14].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[14].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[14].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[14].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[14].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[14].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[13].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[13].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[13].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[13].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[13].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[13].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[12].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[12].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[12].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[12].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[12].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[12].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[11].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[11].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[11].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[11].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[11].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[11].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[10].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[10].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[10].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[10].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[10].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[10].scan_cell.secondary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[0].scan_cell.$procdff$31 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[0].scan_cell.$procmux$18_Y, Q = \scan_chain.scan_cells[0].scan_cell.primary_ff).
+Adding EN signal on $flatten\scan_chain.\scan_cells[0].scan_cell.$procdff$26 ($adff) from module tt_um_openram_top (D = $flatten\scan_chain.\scan_cells[0].scan_cell.$procmux$13_Y, Q = \scan_chain.scan_cells[0].scan_cell.secondary_ff).
+
+31.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 183 unused cells and 183 unused wires.
+<suppressed ~184 debug messages>
+
+31.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+31.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~105 debug messages>
+
+31.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+31.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+<suppressed ~114 debug messages>
+Removed a total of 38 cells.
+
+31.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 0 unused cells and 38 unused wires.
+<suppressed ~1 debug messages>
+
+31.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+31.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~105 debug messages>
+
+31.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+31.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+31.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+31.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+31.23. Finished OPT passes. (There is nothing left to do.)
+
+32. Executing WREDUCE pass (reducing word size of cells).
+
+33. Executing PEEPOPT pass (run peephole optimizers).
+
+34. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+35. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module tt_um_openram_top:
+  created 0 $alu and 0 $macc cells.
+
+36. Executing SHARE pass (SAT-based resource sharing).
+
+37. Executing OPT pass (performing simple optimizations).
+
+37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+37.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~105 debug messages>
+
+37.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+37.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+37.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+37.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+37.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+37.9. Finished OPT passes. (There is nothing left to do.)
+
+38. Executing MEMORY pass.
+
+38.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+38.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+38.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+38.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+38.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+38.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+38.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+38.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+38.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+38.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+39. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+40. Executing OPT pass (performing simple optimizations).
+
+40.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+40.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+40.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+40.5. Finished fast OPT passes.
+
+41. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+42. Executing OPT pass (performing simple optimizations).
+
+42.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+42.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+42.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~105 debug messages>
+
+42.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+42.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+42.6. Executing OPT_SHARE pass.
+
+42.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+42.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+42.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+42.10. Finished OPT passes. (There is nothing left to do.)
+
+43. Executing TECHMAP pass (map to technology primitives).
+
+43.1. Executing Verilog-2005 frontend: /nix/store/c26m31cifv9fyym8p72j6cj5ilqgnh2z-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/c26m31cifv9fyym8p72j6cj5ilqgnh2z-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+43.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~323 debug messages>
+
+44. Executing OPT pass (performing simple optimizations).
+
+44.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+44.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+44.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+44.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+44.5. Finished fast OPT passes.
+
+45. Executing OPT pass (performing simple optimizations).
+
+45.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+45.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+45.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+45.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+45.5. Finished fast OPT passes.
+
+46. Executing ABC pass (technology mapping using ABC).
+
+46.1. Extracting gate netlist of module `\tt_um_openram_top' to `<abc-temp-dir>/input.blif'..
+Extracted 106 gates and 247 wires to a netlist network with 141 inputs and 106 outputs.
+
+46.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+46.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        1
+ABC RESULTS:               MUX cells:      105
+ABC RESULTS:        internal signals:        0
+ABC RESULTS:           input signals:      141
+ABC RESULTS:          output signals:      106
+Removing temp directory.
+
+47. Executing OPT pass (performing simple optimizations).
+
+47.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+47.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+47.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+47.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 0 unused cells and 247 unused wires.
+<suppressed ~1 debug messages>
+
+47.5. Finished fast OPT passes.
+
+48. Executing HIERARCHY pass (managing design hierarchy).
+
+48.1. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+
+48.2. Analyzing design hierarchy..
+Top module:  \tt_um_openram_top
+Removed 0 unused modules.
+
+49. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_openram_top...
+Found and reported 0 problems.
+
+50. Printing statistics.
+
+=== tt_um_openram_top ===
+
+   Number of wires:                931
+   Number of wire bits:           1323
+   Number of public wires:         825
+   Number of public wire bits:    1217
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                324
+     $_AND_                          1
+     $_DFFE_PN0P_                  144
+     $_MUX_                        105
+     $scopeinfo                     73
+     sky130_sram_256B_1rw_32x64      1
+
+51. Generating Graphviz representation of design.
+Writing dot description to `/workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module tt_um_openram_top to page 1.
+
+52. Executing OPT pass (performing simple optimizations).
+
+52.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+52.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+52.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tt_um_openram_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+52.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tt_um_openram_top.
+Performed a total of 0 changes.
+
+52.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tt_um_openram_top'.
+Removed a total of 0 cells.
+
+52.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+52.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+
+52.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tt_um_openram_top.
+
+52.9. Finished OPT passes. (There is nothing left to do.)
+
+53. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 73 unused cells and 672 unused wires.
+<suppressed ~745 debug messages>
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "modules": {
+      "\\tt_um_openram_top": {
+         "num_wires":         259,
+         "num_wire_bits":     326,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 144,
+            "$_MUX_": 105,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         259,
+         "num_wire_bits":     326,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_DFFE_PN0P_": 144,
+            "$_MUX_": 105,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+}
+
+54. Printing statistics.
+
+=== tt_um_openram_top ===
+
+   Number of wires:                259
+   Number of wire bits:            326
+   Number of public wires:         153
+   Number of public wire bits:     220
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                251
+     $_AND_                          1
+     $_DFFE_PN0P_                  144
+     $_MUX_                        105
+     sky130_sram_256B_1rw_32x64      1
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type \sky130_sram_256B_1rw_32x64 is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+55. Executing TECHMAP pass (map to technology primitives).
+
+55.1. Executing Verilog-2005 frontend: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+55.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+56. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+57. Executing TECHMAP pass (map to technology primitives).
+
+57.1. Executing Verilog-2005 frontend: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+57.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+58. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+59. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+59.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\tt_um_openram_top':
+  mapped 144 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "modules": {
+      "\\tt_um_openram_top": {
+         "num_wires":         403,
+         "num_wire_bits":     470,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         395,
+         "area":              3783.628800,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_MUX_": 249,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         403,
+         "num_wire_bits":     470,
+         "num_pub_wires":     153,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         395,
+         "area":              3783.628800,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_MUX_": 249,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+}
+
+60. Printing statistics.
+
+=== tt_um_openram_top ===
+
+   Number of wires:                403
+   Number of wire bits:            470
+   Number of public wires:         153
+   Number of public wire bits:     220
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                395
+     $_AND_                          1
+     $_MUX_                        249
+     sky130_fd_sc_hd__dfrtp_2      144
+     sky130_sram_256B_1rw_32x64      1
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type \sky130_sram_256B_1rw_32x64 is unknown!
+
+   Chip area for module '\tt_um_openram_top': 3783.628800
+     of which used for sequential elements: 3783.628800 (100.00%)
+
+[INFO] Using generated ABC script '/workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/AREA_0.abc'…
+
+61. Executing ABC pass (technology mapping using ABC).
+
+61.1. Extracting gate netlist of module `\tt_um_openram_top' to `/tmp/yosys-abc-gTJeIW/input.blif'..
+Extracted 250 gates and 430 wires to a netlist network with 180 inputs and 144 outputs.
+
+61.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-gTJeIW/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-gTJeIW/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-gTJeIW/input.blif 
+ABC: + read_lib -w /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.02 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.04 sec
+ABC: Memory =    9.54 MB. Time =     0.04 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =    250 (  0.0 %)   Cap = 15.2 ff ( 24.9 %)   Area =     2810.20 (  0.4 %)   Delay =  1096.68 ps  ( 16.0 %)               
+ABC: Path  0 --       2 : 0  106 pi                       A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout = 374.2 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     327 : 2   39 sky130_fd_sc_hd__nand2_2 A =   6.26  Df = 497.8 -122.7 ps  S = 694.4 ps  Cin =  4.4 ff  Cout = 137.3 ff  Cmax = 295.7 ff  G = 2999  
+ABC: Path  2 --     328 : 3    1 sky130_fd_sc_hd__mux2_1  A =  11.26  Df =1096.7 -105.7 ps  S = 301.5 ps  Cin =  2.3 ff  Cout =  33.4 ff  Cmax = 173.0 ff  G = 1465  
+ABC: Start-point = pi1 (\ui_in [1]).  End-point = po1 ($auto$rtlil.cc:2739:MuxGate$766).
+ABC: netlist                       : i/o =  180/  144  lat =    0  nd =   250  edge =    749  area =2810.00  delay = 2.00  lev = 2
+ABC: + write_blif /tmp/yosys-abc-gTJeIW/output.blif 
+
+61.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:      249
+ABC RESULTS:        internal signals:      106
+ABC RESULTS:           input signals:      180
+ABC RESULTS:          output signals:      144
+Removing temp directory.
+
+62. Executing SETUNDEF pass (replace undef values with defined constants).
+
+63. Executing HILOMAP pass (mapping to constant drivers).
+
+64. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+65. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tt_um_openram_top..
+Removed 0 unused cells and 452 unused wires.
+<suppressed ~1 debug messages>
+
+66. Executing INSBUF pass (insert buffer cells for connected wires).
+Add tt_um_openram_top/$auto$insbuf.cc:97:execute$1346: \scan_chain.scan_cells[71].scan_cell.data_in -> \uo_out [0]
+Add tt_um_openram_top/$auto$insbuf.cc:97:execute$1347: \scan_chain.scan_cells[0].scan_cell.data_out -> \uo_out [1]
+
+67. Executing CHECK pass (checking for obvious problems).
+Checking module tt_um_openram_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "modules": {
+      "\\tt_um_openram_top": {
+         "num_wires":         435,
+         "num_wire_bits":     470,
+         "num_pub_wires":     185,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         419,
+         "area":              6686.412800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__conb_1": 22,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_fd_sc_hd__mux2_1": 249,
+            "sky130_fd_sc_hd__nand2_2": 1,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         435,
+         "num_wire_bits":     470,
+         "num_pub_wires":     185,
+         "num_pub_wire_bits": 220,
+         "num_ports":         8,
+         "num_port_bits":     43,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         419,
+         "area":              6686.412800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__conb_1": 22,
+            "sky130_fd_sc_hd__dfrtp_2": 144,
+            "sky130_fd_sc_hd__mux2_1": 249,
+            "sky130_fd_sc_hd__nand2_2": 1,
+            "sky130_sram_256B_1rw_32x64": 1
+         }
+      }
+}
+
+68. Printing statistics.
+
+=== tt_um_openram_top ===
+
+   Number of wires:                435
+   Number of wire bits:            470
+   Number of public wires:         185
+   Number of public wire bits:     220
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                419
+     sky130_fd_sc_hd__buf_2          2
+     sky130_fd_sc_hd__conb_1        22
+     sky130_fd_sc_hd__dfrtp_2      144
+     sky130_fd_sc_hd__mux2_1       249
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_sram_256B_1rw_32x64      1
+
+   Area for cell type \sky130_sram_256B_1rw_32x64 is unknown!
+
+   Chip area for module '\tt_um_openram_top': 6686.412800
+     of which used for sequential elements: 3783.628800 (56.59%)
+
+69. Executing Verilog backend.
+Dumping module `\tt_um_openram_top'.
+
+70. Executing JSON backend.

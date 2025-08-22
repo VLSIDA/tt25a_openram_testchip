@@ -1,0 +1,102 @@
+Clock: sclka
+Sources: ui_in[3] 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10000.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+sclka               10000.000000    0.0000005000.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock sclka
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.448714         network latency _608_/CLK
+        0.486672 network latency _621_/CLK
+---------------
+0.448714 0.486672 latency
+        0.037958 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+0.414071         network latency _631_/CLK
+        0.425289 network latency _621_/CLK
+---------------
+0.414071 0.425289 latency
+        0.011218 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.400632         network latency _546_/CLK
+        0.412911 network latency _592_/CLK
+---------------
+0.400632 0.412911 latency
+        0.012278 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+sclka period_min = 1.63 fmax = 614.25
+Clock: sclkb
+Sources: ui_in[4] 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10000.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+sclkb               10000.000000    0.0000005000.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock sclkb
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.448714         network latency _608_/CLK
+        0.486672 network latency _621_/CLK
+---------------
+0.448714 0.486672 latency
+        0.037958 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+0.400909         network latency _608_/CLK
+        0.413002 network latency _618_/CLK
+---------------
+0.400909 0.413002 latency
+        0.012093 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.414275         network latency _557_/CLK
+        0.425644 network latency _621_/CLK
+---------------
+0.414275 0.425644 latency
+        0.011369 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+sclkb period_min = 1.78 fmax = 562.41

@@ -1,0 +1,21 @@
+{
+	"design__die__bbox": "0.0 0.0 334.88 225.76",
+	"design__core__bbox": "2.76 2.72 332.12 223.04",
+	"design__io": 43,
+	"design__die__area": 75602.5,
+	"design__core__area": 72564.6,
+	"design__instance__count": 419,
+	"design__instance__area": 58747.1,
+	"design__instance__count__stdcell": 418,
+	"design__instance__area__stdcell": 6686.41,
+	"design__instance__count__macros": 1,
+	"design__instance__area__macros": 52060.6,
+	"design__instance__utilization": 0.809583,
+	"design__instance__utilization__stdcell": 0.326104,
+	"design__instance__count__class:macro": 1,
+	"design__instance__count__class:buffer": 2,
+	"design__instance__count__class:sequential_cell": 144,
+	"design__instance__count__class:multi_input_combinational_cell": 272,
+	"flow__warnings__count": 7,
+	"flow__errors__count": 0
+}
