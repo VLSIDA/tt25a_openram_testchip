@@ -5,14 +5,14 @@
 
 `default_nettype none
 //`timescale 1ns / 1ps
-`include "sky130_sram_1kbyte_1rw_32x256_8.v"
+`include "sky130_sram_256B_1rw_32x64.v"
 `include "scan_chain_2ph.v"
 `include "defs.v"
 module tt_um_openram_top (
-      `ifdef USE_POWER_PINS
-    input VPWR,
-    input VGND,
-    `endif 
+    `ifdef USE_POWER_PINS
+      input VPWR,
+      input VGND,
+    `endif
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -24,7 +24,7 @@ module tt_um_openram_top (
 
 );
 
-parameter ADDR_WIDTH = 9;
+parameter ADDR_WIDTH = 6;
 parameter DATA_WIDTH = 33;
 parameter WMASK_WIDTH = 4;
 parameter SCAN_WIDTH = ADDR_WIDTH + DATA_WIDTH + DATA_WIDTH;
@@ -41,7 +41,7 @@ wire [WMASK_WIDTH-1:0] wmask;
 wire [SCAN_WIDTH-1:0] scan_data_out;
 wire scan_out;
 
-wire scan_in, scan_enable, phase_enable, scan_mode, csb, web, sclka, sclkb, spare_wen;
+wire scan_in, scan_enable, scan_mode, csb, web, sclka, sclkb, spare_wen;
 assign spare_wen = ui_in[7];
 assign web = ui_in[6];
 assign csb = ui_in[5];
@@ -57,12 +57,12 @@ assign uo_out[1] = scan_data_out[0];
 assign uo_out[0] = scan_out;
 
 
-sky130_sram_1kbyte_1rw_32x256_8 SRAM 
+sky130_sram_256B_1rw_32x64 SRAM 
     (
-      `ifdef USE_POWER_PINS
-     .vccd1(VPWR),
-     .vssd1(VGND),
-      `endif
+    `ifdef USE_POWER_PINS
+    .vccd1(VPWR),
+    .vssd1(VGND),
+    `endif
      .clk0   (sclka), //SRAM USES A CLK 
      .csb0   (csb),
      .web0   (web),

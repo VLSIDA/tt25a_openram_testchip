@@ -1,11 +1,12 @@
 // OpenRAM SRAM model
-// Words: 256
+// Words: 32
 // Word size: 32
 // Write size: 8
 `ifndef SRAM_GUARD
 `define SRAM_GUARD
 
-module sky130_sram_1kbyte_1rw_32x256_8(
+
+module sky130_sram_256B_1rw_32x64(
 `ifdef USE_POWER_PINS
     vccd1,
     vssd1,
@@ -16,7 +17,7 @@ module sky130_sram_1kbyte_1rw_32x256_8(
 
   parameter NUM_WMASKS = 4 ;
   parameter DATA_WIDTH = 33 ;
-  parameter ADDR_WIDTH = 9 ;
+  parameter ADDR_WIDTH = 6 ;
   parameter RAM_DEPTH = 1 << ADDR_WIDTH;
   // FIXME: This delay is arbitrary.
   parameter DELAY = 3 ;
@@ -24,17 +25,19 @@ module sky130_sram_1kbyte_1rw_32x256_8(
   parameter T_HOLD = 1 ; //Delay to hold dout value after posedge. Value is arbitrary
 
 `ifdef USE_POWER_PINS
-    inout vccd1;
-    inout vssd1;
+    input vccd1;
+    input vssd1;
 `endif
   input  clk0; // clock
   input   csb0; // active low chip select
   input  web0; // active low write control
+  input [ADDR_WIDTH-1:0]  addr0;
   input [NUM_WMASKS-1:0]   wmask0; // write mask
   input           spare_wen0; // spare mask
-  input [ADDR_WIDTH-1:0]  addr0;
   input [DATA_WIDTH-1:0]  din0;
   output [DATA_WIDTH-1:0] dout0;
+
+  reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
 
   reg  csb0_reg;
   reg  web0_reg;
@@ -53,19 +56,9 @@ module sky130_sram_1kbyte_1rw_32x256_8(
     spare_wen0_reg = spare_wen0;
     addr0_reg = addr0;
     din0_reg = din0;
-
-/*     `ifdef SIMULATION
-    #(T_HOLD) dout0 <= 33'bx;
-    if ( !csb0_reg && web0_reg && VERBOSE ) 
-      $display($time," Reading %m addr0=%b dout0=%b",addr0_reg,mem[addr0_reg]);
-    if ( !csb0_reg && !web0_reg && VERBOSE )
-      $display($time," Writing %m addr0=%b din0=%b wmask0=%b",addr0_reg,din0_reg,wmask0_reg);
-    `else
-    dout0 <= 33'bx;
-    `endif */
+    #(T_HOLD) dout0 = 32'bx;
   end
 
-reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
 
   // Memory Write Block Port 0
   // Write Operation : When web0 = 0, csb0 = 0
@@ -89,13 +82,8 @@ reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
   // Read Operation : When web0 = 1, csb0 = 0
   always @ (negedge clk0)
   begin : MEM_READ0
-    if (!csb0_reg && web0_reg) begin
-    `ifdef SIMULATION
+    if (!csb0_reg && web0_reg)
        dout0 <= #(DELAY) mem[addr0_reg];
-      `else
-       dout0 <= mem[addr0_reg];
-      `endif
-    end
   end
 
 endmodule

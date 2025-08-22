@@ -19,7 +19,9 @@ project:
   source_files:
     - "defs.v"
     - "project.v"
-    - "sky130_sram_1kbyte_1rw_32x256_8.v"
+    - "scan_cell_2ph.v"
+    - "scan_chain_2ph.v"
+    - "sky130_sram_256B_1rw_32x64.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
