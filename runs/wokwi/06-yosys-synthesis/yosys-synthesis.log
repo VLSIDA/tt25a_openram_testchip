@@ -10,8 +10,8 @@ Loaded SDC plugin
 1. Executing Liberty frontend: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 Imported 428 cell types from liberty file.
 
-2. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v
-Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v' to AST representation.
+2. Executing Verilog-2005 frontend: src/sky130_sram_256B_1rw_32x64.v
+Parsing SystemVerilog input from `src/sky130_sram_256B_1rw_32x64.v' to AST representation.
 Generating RTLIL representation for module `\sky130_sram_256B_1rw_32x64'.
 Successfully finished Verilog frontend.
 [INFO] Using SDC file '/workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
@@ -781,7 +781,7 @@ Removed 73 unused cells and 672 unused wires.
 <suppressed ~745 debug messages>
 {
    "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
-   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib ",
    "modules": {
       "\\tt_um_openram_top": {
          "num_wires":         259,
@@ -906,7 +906,7 @@ Mapping DFF cells in module `\tt_um_openram_top':
   mapped 144 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
 {
    "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
-   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib ",
    "modules": {
       "\\tt_um_openram_top": {
          "num_wires":         403,
@@ -979,16 +979,16 @@ Mapping DFF cells in module `\tt_um_openram_top':
 
 61. Executing ABC pass (technology mapping using ABC).
 
-61.1. Extracting gate netlist of module `\tt_um_openram_top' to `/tmp/yosys-abc-gTJeIW/input.blif'..
+61.1. Extracting gate netlist of module `\tt_um_openram_top' to `/tmp/yosys-abc-RBree2/input.blif'..
 Extracted 250 gates and 430 wires to a netlist network with 180 inputs and 144 outputs.
 
 61.1.1. Executing ABC.
-Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-gTJeIW/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-gTJeIW/abc.script".
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-RBree2/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-RBree2/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-gTJeIW/input.blif 
-ABC: + read_lib -w /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.02 sec
+ABC: + read_blif /tmp/yosys-abc-RBree2/input.blif 
+ABC: + read_lib -w /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
@@ -1006,7 +1006,7 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.04 sec
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.04 sec
 ABC: Memory =    9.54 MB. Time =     0.04 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
 ABC: + read_constr -v /workspaces/tt25a_openram_testchip/runs/wokwi/06-yosys-synthesis/synthesis.abc.sdc 
@@ -1021,7 +1021,7 @@ ABC: Path  1 --     327 : 2   39 sky130_fd_sc_hd__nand2_2 A =   6.26  Df = 497.8
 ABC: Path  2 --     328 : 3    1 sky130_fd_sc_hd__mux2_1  A =  11.26  Df =1096.7 -105.7 ps  S = 301.5 ps  Cin =  2.3 ff  Cout =  33.4 ff  Cmax = 173.0 ff  G = 1465  
 ABC: Start-point = pi1 (\ui_in [1]).  End-point = po1 ($auto$rtlil.cc:2739:MuxGate$766).
 ABC: netlist                       : i/o =  180/  144  lat =    0  nd =   250  edge =    749  area =2810.00  delay = 2.00  lev = 2
-ABC: + write_blif /tmp/yosys-abc-gTJeIW/output.blif 
+ABC: + write_blif /tmp/yosys-abc-RBree2/output.blif 
 
 61.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        1
@@ -1051,7 +1051,7 @@ Checking module tt_um_openram_top...
 Found and reported 0 problems.
 {
    "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
-   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/3370ac9c27aa4e46a81f3ed7a98ee3f5.lib ",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib ",
    "modules": {
       "\\tt_um_openram_top": {
          "num_wires":         435,

@@ -123,23 +123,23 @@ if { $::env(FP_PDN_CORE_RING) == 1 } {
     }
 }
 
-# define_pdn_grid \
-#     -macro \
-#     -default \
-#     -name macro \
-#     -starts_with POWER \
-#     -halo "$::env(FP_PDN_HORIZONTAL_HALO) $::env(FP_PDN_VERTICAL_HALO)"
+define_pdn_grid \
+    -macro \
+    -default \
+    -name macro \
+    -starts_with POWER \
+    -halo "$::env(FP_PDN_HORIZONTAL_HALO) $::env(FP_PDN_VERTICAL_HALO)"
 
 
-# # add_pdn_stripe \
-# #     -grid macro \
-# #     -layer $::env(FP_PDN_VERTICAL_LAYER) \
-# #     -width $::env(FP_PDN_VWIDTH) \
-# #     -pitch $::env(FP_PDN_VPITCH) \
-# #     -offset $::env(FP_PDN_VOFFSET) \
-# #     -spacing $::env(FP_PDN_VSPACING) \
-# #     -starts_with POWER -extend_to_core_ring
-
-# add_pdn_connect \
+# add_pdn_stripe \
 #     -grid macro \
-#     -layers "met3 met4"
+#     -layer $::env(FP_PDN_VERTICAL_LAYER) \
+#     -width $::env(FP_PDN_VWIDTH) \
+#     -pitch $::env(FP_PDN_VPITCH) \
+#     -offset $::env(FP_PDN_VOFFSET) \
+#     -spacing $::env(FP_PDN_VSPACING) \
+#     -starts_with POWER -extend_to_core_ring
+
+add_pdn_connect \
+    -grid macro \
+    -layers "met3 met4"

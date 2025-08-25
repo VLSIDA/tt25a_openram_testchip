@@ -19,29 +19,29 @@ Clock sclka
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-0.646088         network latency _627_/CLK
-        0.684553 network latency _620_/CLK
+0.656311         network latency _563_/CLK
+        0.711640 network latency _618_/CLK
 ---------------
-0.646088 0.684553 latency
-        0.038465 skew
+0.656311 0.711640 latency
+        0.055329 skew
 
 rise -> fall
     min     max
 0.000000 0.000000 source latency
-0.320130         network latency _627_/CLK
-        0.328802 network latency _621_/CLK
+0.325397         network latency _563_/CLK
+        0.335011 network latency _621_/CLK
 ---------------
-0.320130 0.328802 latency
-        0.008671 skew
+0.325397 0.335011 latency
+        0.009615 skew
 
 fall -> fall
     min     max
 0.000000 0.000000 source latency
-0.334239         network latency _626_/CLK
-        0.345153 network latency _620_/CLK
+0.350155         network latency _500_/CLK
+        0.358796 network latency _590_/CLK
 ---------------
-0.334239 0.345153 latency
-        0.010914 skew
+0.350155 0.358796 latency
+        0.008640 skew
 
 
 
@@ -70,29 +70,29 @@ Clock sclkb
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-0.646088         network latency _627_/CLK
-        0.684553 network latency _620_/CLK
+0.656311         network latency _563_/CLK
+        0.711640 network latency _618_/CLK
 ---------------
-0.646088 0.684553 latency
-        0.038465 skew
+0.656311 0.711640 latency
+        0.055329 skew
 
 rise -> fall
     min     max
 0.000000 0.000000 source latency
-0.334330         network latency _626_/CLK
-        0.344971 network latency _620_/CLK
+0.349946         network latency _500_/CLK
+        0.358905 network latency _618_/CLK
 ---------------
-0.334330 0.344971 latency
-        0.010641 skew
+0.349946 0.358905 latency
+        0.008959 skew
 
 fall -> fall
     min     max
 0.000000 0.000000 source latency
-0.320142         network latency _557_/CLK
-        0.328782 network latency _593_/CLK
+0.325599         network latency _557_/CLK
+        0.335149 network latency _595_/CLK
 ---------------
-0.320142 0.328782 latency
-        0.008640 skew
+0.325599 0.335149 latency
+        0.009550 skew
 
 
 

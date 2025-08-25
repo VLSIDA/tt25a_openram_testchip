@@ -27,6 +27,6 @@
 	"design__instance__area__macros": 52060.6,
 	"design__instance__utilization": 0.813031,
 	"design__instance__utilization__stdcell": 0.338308,
-	"flow__warnings__count": 1741,
-	"flow__errors__count": 2
+	"flow__warnings__count": 2,
+	"flow__errors__count": 0
 }

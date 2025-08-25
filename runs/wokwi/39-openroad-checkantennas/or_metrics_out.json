@@ -1,6 +1,6 @@
 {
-	"antenna__violating__nets": 20,
-	"antenna__violating__pins": 20,
+	"antenna__violating__nets": 21,
+	"antenna__violating__pins": 21,
 	"flow__warnings__count": 2,
 	"flow__errors__count": 0
 }

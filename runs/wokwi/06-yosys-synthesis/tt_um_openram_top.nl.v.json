@@ -22363,7 +22363,7 @@
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
         "dynports": "00000000000000000000000000000001",
-        "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:9.1-89.10"
+        "src": "src/sky130_sram_256B_1rw_32x64.v:9.1-89.10"
       },
       "parameter_default_values": {
         "ADDR_WIDTH": "00000000000000000000000000000110",
@@ -22415,56 +22415,56 @@
           "hide_name": 0,
           "bits": [ 10, 11, 12, 13, 14, 15 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:34.27-34.32"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:34.27-34.32"
           }
         },
         "clk0": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:31.10-31.14"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:31.10-31.14"
           }
         },
         "csb0": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:32.11-32.15"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:32.11-32.15"
           }
         },
         "din0": {
           "hide_name": 0,
           "bits": [ 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:37.27-37.31"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:37.27-37.31"
           }
         },
         "dout0": {
           "hide_name": 0,
           "bits": [ 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:38.27-38.32"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:38.27-38.32"
           }
         },
         "spare_wen0": {
           "hide_name": 0,
           "bits": [ 9 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:36.19-36.29"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:36.19-36.29"
           }
         },
         "web0": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:33.10-33.14"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:33.10-33.14"
           }
         },
         "wmask0": {
           "hide_name": 0,
           "bits": [ 5, 6, 7, 8 ],
           "attributes": {
-            "src": "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v:35.28-35.34"
+            "src": "src/sky130_sram_256B_1rw_32x64.v:35.28-35.34"
           }
         }
       }

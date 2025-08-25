@@ -25,65 +25,65 @@ Iteration | Resized | Buffers | Nets repaired | Remaining
        80 |       0 |       0 |             0 |       416
        90 |       0 |       0 |             0 |       406
       100 |       0 |       0 |             0 |       396
-      110 |       1 |       0 |             0 |       386
-      120 |       1 |       0 |             0 |       376
-      130 |       1 |       0 |             0 |       366
-      140 |       1 |       0 |             0 |       356
-      150 |       1 |       0 |             0 |       346
-      160 |       1 |       0 |             0 |       336
-      170 |       1 |       0 |             0 |       326
-      180 |       1 |       0 |             0 |       316
-      190 |       1 |       0 |             0 |       306
-      200 |       1 |       0 |             0 |       296
-      210 |       1 |       0 |             0 |       286
-      220 |       1 |       0 |             0 |       276
-      230 |       1 |       0 |             0 |       266
-      240 |       1 |       0 |             0 |       256
-      250 |       1 |       0 |             0 |       246
-      260 |       9 |       0 |             0 |       236
-      270 |      19 |       0 |             0 |       226
-      280 |      29 |       0 |             0 |       216
-      290 |      39 |       0 |             0 |       206
-      300 |      49 |       0 |             0 |       196
-      310 |      59 |       0 |             0 |       186
-      320 |      68 |       0 |             0 |       176
-      330 |      76 |       0 |             0 |       166
-      340 |      86 |       0 |             0 |       156
-      350 |      96 |       0 |             0 |       146
+      110 |       0 |       0 |             0 |       386
+      120 |       0 |       0 |             0 |       376
+      130 |       0 |       0 |             0 |       366
+      140 |       0 |       0 |             0 |       356
+      150 |       0 |       0 |             0 |       346
+      160 |       0 |       0 |             0 |       336
+      170 |       0 |       0 |             0 |       326
+      180 |       0 |       0 |             0 |       316
+      190 |       0 |       0 |             0 |       306
+      200 |       0 |       0 |             0 |       296
+      210 |       0 |       0 |             0 |       286
+      220 |       0 |       0 |             0 |       276
+      230 |       0 |       0 |             0 |       266
+      240 |       0 |       0 |             0 |       256
+      250 |       0 |       0 |             0 |       246
+      260 |       8 |       0 |             0 |       236
+      270 |      18 |       0 |             0 |       226
+      280 |      28 |       0 |             0 |       216
+      290 |      38 |       0 |             0 |       206
+      300 |      48 |       0 |             0 |       196
+      310 |      58 |       0 |             0 |       186
+      320 |      67 |       0 |             0 |       176
+      330 |      75 |       0 |             0 |       166
+      340 |      85 |       0 |             0 |       156
+      350 |      95 |       0 |             0 |       146
       360 |     103 |       0 |             0 |       136
-      370 |     111 |       0 |             0 |       126
-      380 |     121 |       0 |             0 |       116
-      390 |     131 |       0 |             0 |       106
-      400 |     172 |      33 |             3 |        96
-      410 |     193 |      53 |             4 |        86
-      420 |     193 |      53 |             4 |        76
-      430 |     193 |      53 |             4 |        66
-      440 |     193 |      53 |             4 |        56
-      450 |     193 |      53 |             4 |        46
-      460 |     193 |      53 |             4 |        36
-      470 |     193 |      53 |             4 |        26
-      480 |     193 |      53 |             4 |        16
-      490 |     193 |      53 |             4 |         6
-    final |     193 |      53 |             4 |         0
+      370 |     110 |       0 |             0 |       126
+      380 |     120 |       0 |             0 |       116
+      390 |     130 |       0 |             0 |       106
+      400 |     172 |      34 |             3 |        96
+      410 |     192 |      53 |             4 |        86
+      420 |     192 |      53 |             4 |        76
+      430 |     192 |      53 |             4 |        66
+      440 |     192 |      53 |             4 |        56
+      450 |     192 |      53 |             4 |        46
+      460 |     192 |      53 |             4 |        36
+      470 |     192 |      53 |             4 |        26
+      480 |     192 |      53 |             4 |        16
+      490 |     192 |      53 |             4 |         6
+    final |     192 |      53 |             4 |         0
 ---------------------------------------------------------
 [INFO RSZ-0034] Found 1 slew violations.
 [INFO RSZ-0035] Found 4 fanout violations.
 [INFO RSZ-0038] Inserted 53 buffers in 4 nets.
-[INFO RSZ-0039] Resized 193 instances.
+[INFO RSZ-0039] Resized 192 instances.
 [INFO RSZ-0042] Inserted 22 tie sky130_fd_sc_hd__conb_1 instances.
 Placement Analysis
 ---------------------------------
-total displacement       1788.3 u
-average displacement        2.1 u
-max displacement           69.1 u
-original HPWL           22875.3 u
-legalized HPWL          24257.6 u
-delta HPWL                    6 %
+total displacement       2182.0 u
+average displacement        2.6 u
+max displacement          120.6 u
+original HPWL           23176.9 u
+legalized HPWL          24734.4 u
+delta HPWL                    7 %
 
-[INFO DPL-0020] Mirrored 131 instances
-[INFO DPL-0021] HPWL before           24257.6 u
-[INFO DPL-0022] HPWL after            24040.2 u
-[INFO DPL-0023] HPWL delta               -0.9 %
+[INFO DPL-0020] Mirrored 130 instances
+[INFO DPL-0021] HPWL before           24734.4 u
+[INFO DPL-0022] HPWL after            24497.4 u
+[INFO DPL-0023] HPWL delta               -1.0 %
 [INFO] Setting RC values…
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -93,11 +93,11 @@ Cell type report:                       Count       Area
   Macro                                     1   52060.65
   Fill cell                               162     608.08
   Tap cell                                200     250.24
-  Buffer                                    2      12.51
-  Timing Repair Buffer                     57     360.35
-  Sequential cell                         144    3681.03
+  Buffer                                    2      10.01
+  Timing Repair Buffer                     57     369.10
+  Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                   838   59865.63
+  Total                                   838   59868.14
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.pnl.v'…

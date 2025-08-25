@@ -3,7 +3,7 @@ set ::env(RSZ_CORNER_1) "nom_ss_100C_1v60 /home/vscode/ttsetup/pdk/volare/sky130
 set ::env(RSZ_CORNER_2) "nom_ff_n40C_1v95 /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
 set ::env(STEP_ID) OpenROAD.CTS
 set ::env(TECH_LEF) /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
-set ::env(MACRO_LEFS) /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef
+set ::env(MACRO_LEFS) src/sky130_sram_256B_1rw_32x64.lef
 set ::env(STD_CELL_LIBRARY) sky130_fd_sc_hd
 set ::env(VDD_PIN) VPWR
 set ::env(VDD_PIN_VOLTAGE) 1.80
@@ -59,7 +59,7 @@ set ::env(CLOCK_NET) "\"ui_in\\\[3]\" \"ui_in\\\[4]\""
 set ::env(VDD_NETS) VPWR
 set ::env(GND_NETS) VGND
 set ::env(DIE_AREA) "0 0 334.88 225.76"
-set ::env(MACROS) "sky130_sram_256B_1rw_32x64 \"gds /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.gds lef /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
+set ::env(MACROS) "sky130_sram_256B_1rw_32x64 \"gds src/sky130_sram_256B_1rw_32x64.gds lef src/sky130_sram_256B_1rw_32x64.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_256B_1rw_32x64.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
 set ::env(EXTRA_LEFS) src/sky130_sram_256B_1rw_32x64.lef
 set ::env(FALLBACK_SDC_FILE) src/project.sdc
 set ::env(PDN_CONNECT_MACROS_TO_GRID) 1

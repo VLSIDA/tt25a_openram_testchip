@@ -34,24 +34,24 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
 [INFO CTS-0030]  Number of static layers: 0.
 [INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
-[INFO CTS-0023]  Original sink region: [(33845, 12300), (320425, 219020)].
-[INFO CTS-0024]  Normalized sink region: [(2.4886, 0.904412), (23.5607, 16.1044)].
-[INFO CTS-0025]     Width:  21.0721.
+[INFO CTS-0023]  Original sink region: [(35685, 12300), (320425, 219020)].
+[INFO CTS-0024]  Normalized sink region: [(2.6239, 0.904412), (23.5607, 16.1044)].
+[INFO CTS-0025]     Width:  20.9368.
 [INFO CTS-0026]     Height: 15.2000.
  Level 1
     Direction: Horizontal
     Sinks per sub-region: 37
-    Sub-region size: 10.5360 X 15.2000
+    Sub-region size: 10.4684 X 15.2000
 [INFO CTS-0034]     Segment length (rounded): 6.
  Level 2
     Direction: Vertical
     Sinks per sub-region: 19
-    Sub-region size: 10.5360 X 7.6000
+    Sub-region size: 10.4684 X 7.6000
 [INFO CTS-0034]     Segment length (rounded): 4.
  Level 3
     Direction: Horizontal
     Sinks per sub-region: 10
-    Sub-region size: 5.2680 X 7.6000
+    Sub-region size: 5.2342 X 7.6000
 [INFO CTS-0034]     Segment length (rounded): 2.
 [INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
 [INFO CTS-0035]  Number of sinks covered: 73.
@@ -62,24 +62,24 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
 [INFO CTS-0030]  Number of static layers: 0.
 [INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
-[INFO CTS-0023]  Original sink region: [(43045, 25780), (320425, 219020)].
-[INFO CTS-0024]  Normalized sink region: [(3.16507, 1.89559), (23.5607, 16.1044)].
-[INFO CTS-0025]     Width:  20.3956.
-[INFO CTS-0026]     Height: 14.2088.
+[INFO CTS-0023]  Original sink region: [(42125, 28620), (321275, 219020)].
+[INFO CTS-0024]  Normalized sink region: [(3.09743, 2.10441), (23.6232, 16.1044)].
+[INFO CTS-0025]     Width:  20.5257.
+[INFO CTS-0026]     Height: 14.0000.
  Level 1
     Direction: Horizontal
     Sinks per sub-region: 36
-    Sub-region size: 10.1978 X 14.2088
+    Sub-region size: 10.2629 X 14.0000
 [INFO CTS-0034]     Segment length (rounded): 6.
  Level 2
     Direction: Vertical
     Sinks per sub-region: 18
-    Sub-region size: 10.1978 X 7.1044
+    Sub-region size: 10.2629 X 7.0000
 [INFO CTS-0034]     Segment length (rounded): 4.
  Level 3
     Direction: Horizontal
     Sinks per sub-region: 9
-    Sub-region size: 5.0989 X 7.1044
+    Sub-region size: 5.1314 X 7.0000
 [INFO CTS-0034]     Segment length (rounded): 2.
 [INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
 [INFO CTS-0035]  Number of sinks covered: 72.
@@ -87,24 +87,24 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
 [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
 [INFO CTS-0015]     Created 9 clock nets.
-[INFO CTS-0016]     Fanout distribution for the current clock = 7:2, 8:3, 10:1, 12:1, 13:1..
+[INFO CTS-0016]     Fanout distribution for the current clock = 7:3, 8:1, 9:1, 10:1, 12:1, 13:1..
 [INFO CTS-0017]     Max level of the clock tree: 3.
 [INFO CTS-0018]     Created 9 clock buffers.
 [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
 [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
 [INFO CTS-0015]     Created 9 clock nets.
-[INFO CTS-0016]     Fanout distribution for the current clock = 7:2, 8:2, 9:2, 12:2..
+[INFO CTS-0016]     Fanout distribution for the current clock = 7:3, 9:2, 10:2, 13:1..
 [INFO CTS-0017]     Max level of the clock tree: 3.
 [INFO CTS-0098] Clock net "ui_in[3]"
 [INFO CTS-0099]  Sinks 80
 [INFO CTS-0100]  Leaf buffers 0
-[INFO CTS-0101]  Average sink wire length 326.52 um
+[INFO CTS-0101]  Average sink wire length 326.03 um
 [INFO CTS-0102]  Path depth 2 - 2
 [INFO CTS-0207]  Leaf load cells 14
 [INFO CTS-0098] Clock net "ui_in[4]"
 [INFO CTS-0099]  Sinks 79
 [INFO CTS-0100]  Leaf buffers 0
-[INFO CTS-0101]  Average sink wire length 317.93 um
+[INFO CTS-0101]  Average sink wire length 315.87 um
 [INFO CTS-0102]  Path depth 2 - 2
 [INFO CTS-0207]  Leaf load cells 14
 [INFO] Repairing long wires on clock nets…
@@ -117,13 +117,13 @@ Cell type report:                       Count       Area
   Macro                                     1   52060.65
   Fill cell                               162     608.08
   Tap cell                                200     250.24
-  Buffer                                    2      12.51
-  Clock buffer                             20     465.45
-  Timing Repair Buffer                     57     360.35
-  Clock inverter                           12     130.12
-  Sequential cell                         144    3681.03
+  Buffer                                    2      10.01
+  Clock buffer                             19     457.94
+  Timing Repair Buffer                     57     369.10
+  Clock inverter                           13     165.16
+  Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                   870   60461.20
+  Total                                   870   60491.23
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.pnl.v'…
@@ -132,16 +132,16 @@ Writing timing constraints to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-
 [INFO] Legalizing…
 Placement Analysis
 ---------------------------------
-total displacement        680.7 u
-average displacement        0.8 u
+total displacement        832.3 u
+average displacement        1.0 u
 max displacement           72.1 u
-original HPWL           25367.6 u
-legalized HPWL          25681.1 u
+original HPWL           25765.7 u
+legalized HPWL          26116.9 u
 delta HPWL                    1 %
 
-[INFO DPL-0020] Mirrored 142 instances
-[INFO DPL-0021] HPWL before           25681.1 u
-[INFO DPL-0022] HPWL after            25369.1 u
+[INFO DPL-0020] Mirrored 136 instances
+[INFO DPL-0021] HPWL before           26116.9 u
+[INFO DPL-0022] HPWL after            25794.3 u
 [INFO DPL-0023] HPWL delta               -1.2 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -151,13 +151,13 @@ Cell type report:                       Count       Area
   Macro                                     1   52060.65
   Fill cell                               162     608.08
   Tap cell                                200     250.24
-  Buffer                                    2      12.51
-  Clock buffer                             20     465.45
-  Timing Repair Buffer                     57     360.35
-  Clock inverter                           12     130.12
-  Sequential cell                         144    3681.03
+  Buffer                                    2      10.01
+  Clock buffer                             19     457.94
+  Timing Repair Buffer                     57     369.10
+  Clock inverter                           13     165.16
+  Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                   870   60461.20
+  Total                                   870   60491.23
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.pnl.v'…

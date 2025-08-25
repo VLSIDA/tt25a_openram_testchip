@@ -154,10 +154,10 @@
     "MACROS": {
         "sky130_sram_256B_1rw_32x64": {
             "gds": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.gds"
+                "src/sky130_sram_256B_1rw_32x64.gds"
             ],
             "lef": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef"
+                "src/sky130_sram_256B_1rw_32x64.lef"
             ],
             "instances": {
                 "SRAM": {
@@ -170,7 +170,7 @@
             },
             "vh": [],
             "nl": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v"
+                "src/sky130_sram_256B_1rw_32x64.v"
             ],
             "pnl": [],
             "spef": {},

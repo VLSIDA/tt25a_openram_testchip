@@ -22,53 +22,53 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0003] Macros: 1
 [INFO GRT-0043] No OR_DEFAULT vias defined.
-[INFO GRT-0004] Blockages: 2081
+[INFO GRT-0004] Blockages: 2101
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal      31712          4818          84.81%
+met1       Horizontal      31712          4826          84.78%
 met2       Vertical        23056          4180          81.87%
-met3       Horizontal      15856          2984          81.18%
-met4       Vertical        10768          1691          84.30%
+met3       Horizontal      15856          2974          81.24%
+met4       Vertical        10768          1683          84.37%
 ---------------------------------------------------------------
 
 [INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 3302
-[INFO GRT-0198] Via related Steiner nodes: 70
+[INFO GRT-0197] Via related to pin nodes: 3303
+[INFO GRT-0198] Via related Steiner nodes: 65
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 4553
-[INFO GRT-0112] Final usage 3D: 17931
+[INFO GRT-0111] Final number of vias: 4557
+[INFO GRT-0112] Final usage 3D: 18025
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              4818          1807           37.51%             0 /  0 /  0
-met2              4180          1351           32.32%             0 /  0 /  0
-met3              2984           889           29.79%             0 /  0 /  0
-met4              1691           225           13.31%             0 /  0 /  0
+met1              4826          1752           36.30%             0 /  0 /  0
+met2              4180          1400           33.49%             0 /  0 /  0
+met3              2974           953           32.04%             0 /  0 /  0
+met4              1683           249           14.80%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            13673          4272           31.24%             0 /  0 /  0
+Total            13663          4354           31.87%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 42117 um
-[INFO GRT-0014] Routed nets: 652
+[INFO GRT-0018] Total wirelength: 42538 um
+[INFO GRT-0014] Routed nets: 649
 [INFO GRT-0006] Repairing antennas, iteration 1.
 [INFO GRT-0043] No OR_DEFAULT vias defined.
-[INFO GRT-0012] Found 23 antenna violations.
-[INFO GRT-0015] Inserted 27 diodes.
-[INFO GRT-0009] rerouting 250 nets.
+[INFO GRT-0012] Found 22 antenna violations.
+[INFO GRT-0015] Inserted 28 diodes.
+[INFO GRT-0009] rerouting 242 nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0006] Repairing antennas, iteration 2.
 [INFO GRT-0043] No OR_DEFAULT vias defined.
 [INFO GRT-0012] Found 2 antenna violations.
 [INFO GRT-0015] Inserted 2 diodes.
-[INFO GRT-0009] rerouting 14 nets.
+[INFO GRT-0009] rerouting 9 nets.
 [INFO GRT-0001] Minimum degree: 2
-[INFO GRT-0002] Maximum degree: 8
+[INFO GRT-0002] Maximum degree: 6
 [INFO GRT-0006] Repairing antennas, iteration 3.
 [INFO GRT-0043] No OR_DEFAULT vias defined.
 [INFO GRT-0012] Found 0 antenna violations.
@@ -77,14 +77,14 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           27605.7 u
-legalized HPWL          27605.7 u
+original HPWL           27611.6 u
+legalized HPWL          27611.6 u
 delta HPWL                    0 %
 
-[INFO DPL-0020] Mirrored 232 instances
-[INFO DPL-0021] HPWL before           27605.7 u
-[INFO DPL-0022] HPWL after            27080.9 u
-[INFO DPL-0023] HPWL delta               -1.9 %
+[INFO DPL-0020] Mirrored 230 instances
+[INFO DPL-0021] HPWL before           27611.6 u
+[INFO DPL-0022] HPWL after            27114.1 u
+[INFO DPL-0023] HPWL delta               -1.8 %
 -congestion_iterations 50 -verbose -allow_congestion
 [INFO GRT-0020] Min routing layer: met1
 [INFO GRT-0021] Max routing layer: met4
@@ -101,39 +101,39 @@ delta HPWL                    0 %
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0003] Macros: 1
 [INFO GRT-0043] No OR_DEFAULT vias defined.
-[INFO GRT-0004] Blockages: 2081
+[INFO GRT-0004] Blockages: 2101
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal      31712          4818          84.81%
+met1       Horizontal      31712          4827          84.78%
 met2       Vertical        23056          4180          81.87%
-met3       Horizontal      15856          2984          81.18%
-met4       Vertical        10768          1691          84.30%
+met3       Horizontal      15856          2974          81.24%
+met4       Vertical        10768          1683          84.37%
 ---------------------------------------------------------------
 
 [INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 3385
-[INFO GRT-0198] Via related Steiner nodes: 75
+[INFO GRT-0197] Via related to pin nodes: 3380
+[INFO GRT-0198] Via related Steiner nodes: 65
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 4640
-[INFO GRT-0112] Final usage 3D: 18279
+[INFO GRT-0111] Final number of vias: 4673
+[INFO GRT-0112] Final usage 3D: 18378
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              4818          1821           37.80%             0 /  0 /  0
-met2              4180          1390           33.25%             0 /  0 /  0
-met3              2984           933           31.27%             0 /  0 /  0
-met4              1691           215           12.71%             0 /  0 /  0
+met1              4827          1800           37.29%             0 /  0 /  0
+met2              4180          1418           33.92%             0 /  0 /  0
+met3              2974           903           30.36%             0 /  0 /  0
+met4              1683           238           14.14%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            13673          4359           31.88%             0 /  0 /  0
+Total            13664          4359           31.90%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 43014 um
-[INFO GRT-0014] Routed nets: 652
+[INFO GRT-0018] Total wirelength: 42911 um
+[INFO GRT-0014] Routed nets: 649
 [INFO] Setting RC values…
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -143,13 +143,13 @@ Cell type report:                       Count       Area
   Macro                                     1   52060.65
   Fill cell                               162     608.08
   Tap cell                                200     250.24
-  Antenna cell                             29      72.57
-  Buffer                                    2      12.51
-  Clock buffer                             20     465.45
-  Timing Repair Buffer                    170    1491.43
-  Clock inverter                           12     130.12
-  Sequential cell                         144    3681.03
+  Antenna cell                             30      75.07
+  Buffer                                    2      10.01
+  Clock buffer                             19     457.94
+  Timing Repair Buffer                    167    1470.16
+  Clock inverter                           13     165.16
+  Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                  1012   61664.86
+  Total                                  1010   61667.36
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/41-openroad-repairantennas/1-diodeinsertion/tt_um_openram_top.odb'…
 Writing layout to '/workspaces/tt25a_openram_testchip/runs/wokwi/41-openroad-repairantennas/1-diodeinsertion/tt_um_openram_top.def'…

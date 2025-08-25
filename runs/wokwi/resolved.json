@@ -154,10 +154,10 @@
     "MACROS": {
         "sky130_sram_256B_1rw_32x64": {
             "gds": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.gds"
+                "src/sky130_sram_256B_1rw_32x64.gds"
             ],
             "lef": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef"
+                "src/sky130_sram_256B_1rw_32x64.lef"
             ],
             "instances": {
                 "SRAM": {
@@ -170,7 +170,7 @@
             },
             "vh": [],
             "nl": [
-                "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v"
+                "src/sky130_sram_256B_1rw_32x64.v"
             ],
             "pnl": [],
             "spef": {},
@@ -292,8 +292,8 @@
     "FP_PDN_SKIPTRIM": false,
     "FP_PDN_CORE_RING": false,
     "FP_PDN_ENABLE_RAILS": true,
-    "FP_PDN_HORIZONTAL_HALO": 5,
-    "FP_PDN_VERTICAL_HALO": 5,
+    "FP_PDN_HORIZONTAL_HALO": 0,
+    "FP_PDN_VERTICAL_HALO": 0,
     "FP_PDN_MULTILAYER": false,
     "FP_PDN_RAIL_OFFSET": 0,
     "FP_PDN_VWIDTH": 1.6,

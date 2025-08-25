@@ -1,6 +1,6 @@
 set ::env(STEP_ID) OpenROAD.GeneratePDN
 set ::env(TECH_LEF) /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
-set ::env(MACRO_LEFS) /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef
+set ::env(MACRO_LEFS) src/sky130_sram_256B_1rw_32x64.lef
 set ::env(STD_CELL_LIBRARY) sky130_fd_sc_hd
 set ::env(VDD_PIN) VPWR
 set ::env(VDD_PIN_VOLTAGE) 1.80
@@ -56,7 +56,7 @@ set ::env(CLOCK_NET) "\"ui_in\\\[3]\" \"ui_in\\\[4]\""
 set ::env(VDD_NETS) VPWR
 set ::env(GND_NETS) VGND
 set ::env(DIE_AREA) "0 0 334.88 225.76"
-set ::env(MACROS) "sky130_sram_256B_1rw_32x64 \"gds /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.gds lef /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl /workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
+set ::env(MACROS) "sky130_sram_256B_1rw_32x64 \"gds src/sky130_sram_256B_1rw_32x64.gds lef src/sky130_sram_256B_1rw_32x64.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_256B_1rw_32x64.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
 set ::env(EXTRA_LEFS) src/sky130_sram_256B_1rw_32x64.lef
 set ::env(FALLBACK_SDC_FILE) src/project.sdc
 set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
@@ -66,8 +66,8 @@ set ::env(FP_DEF_TEMPLATE) /workspaces/tt25a_openram_testchip/tt/def/tt_block_2x
 set ::env(FP_PDN_SKIPTRIM) 0
 set ::env(FP_PDN_CORE_RING) 0
 set ::env(FP_PDN_ENABLE_RAILS) 1
-set ::env(FP_PDN_HORIZONTAL_HALO) 5
-set ::env(FP_PDN_VERTICAL_HALO) 5
+set ::env(FP_PDN_HORIZONTAL_HALO) 0
+set ::env(FP_PDN_VERTICAL_HALO) 0
 set ::env(FP_PDN_MULTILAYER) 0
 set ::env(FP_PDN_RAIL_OFFSET) 0
 set ::env(FP_PDN_VWIDTH) 1.6
