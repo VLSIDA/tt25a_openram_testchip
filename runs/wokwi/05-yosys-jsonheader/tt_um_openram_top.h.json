@@ -10139,7 +10139,7 @@
         },
         "SRAM": {
           "hide_name": 0,
-          "type": "sky130_sram_256B_1rw_32x64",
+          "type": "sky130_sram_128B_1rw_32x32",
           "parameters": {
           },
           "attributes": {

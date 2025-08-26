@@ -98,7 +98,7 @@ TRACKS Y 460 DO 245 STEP 920 LAYER met4 ;
 TRACKS X 1700 DO 98 STEP 3400 LAYER met5 ;
 TRACKS Y 1700 DO 66 STEP 3400 LAYER met5 ;
 COMPONENTS 419 ;
-    - SRAM sky130_sram_256B_1rw_32x64 ;
+    - SRAM sky130_sram_128B_1rw_32x32 ;
     - _250_ sky130_fd_sc_hd__mux2_1 ;
     - _251_ sky130_fd_sc_hd__mux2_1 ;
     - _252_ sky130_fd_sc_hd__nand2_2 ;

@@ -1,0 +1,847 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/ib5in1gi5d1gw05g161q4ab55s6w006g-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/magic/wrapper.tcl" from command line.
+> gds read /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: sky130_fd_sc_hd
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__probe_p_8".
+Reading "sky130_fd_sc_hd__probec_p_8".
+Reading "sky130_fd_sc_hd__sdfbbn_1".
+Reading "sky130_fd_sc_hd__sdfsbp_2".
+Reading "sky130_fd_sc_hd__sdfsbp_1".
+Reading "sky130_fd_sc_hd__sdfrtp_4".
+Reading "sky130_fd_sc_hd__sdfrtp_2".
+Reading "sky130_fd_sc_hd__sdfrtp_1".
+Reading "sky130_fd_sc_hd__sdfrtn_1".
+Reading "sky130_fd_sc_hd__sdfrbp_2".
+Reading "sky130_fd_sc_hd__sdfrbp_1".
+Reading "sky130_fd_sc_hd__sdfbbp_1".
+Reading "sky130_fd_sc_hd__sdfbbn_2".
+Reading "sky130_fd_sc_hd__sdfstp_1".
+Reading "sky130_fd_sc_hd__sdfstp_2".
+Reading "sky130_fd_sc_hd__sdfstp_4".
+Reading "sky130_fd_sc_hd__sdfxbp_1".
+Reading "sky130_fd_sc_hd__sdfxbp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_1".
+Reading "sky130_fd_sc_hd__sdfxtp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_4".
+Reading "sky130_fd_sc_hd__sdlclkp_1".
+Reading "sky130_fd_sc_hd__sdlclkp_2".
+Reading "sky130_fd_sc_hd__sdlclkp_4".
+Reading "sky130_fd_sc_hd__sedfxbp_1".
+Reading "sky130_fd_sc_hd__sedfxbp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_1".
+Reading "sky130_fd_sc_hd__sedfxtp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_4".
+Reading "sky130_fd_sc_hd__tap_1".
+Reading "sky130_fd_sc_hd__tap_2".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xnor3_4".
+Reading "sky130_fd_sc_hd__xnor3_2".
+Reading "sky130_fd_sc_hd__xnor3_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd2_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__xor3_1".
+Reading "sky130_fd_sc_hd__xor3_2".
+Reading "sky130_fd_sc_hd__xor3_4".
+Reading "sky130_fd_sc_hd__o41a_4".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o41ai_2".
+Reading "sky130_fd_sc_hd__o41ai_4".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__o221a_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o221ai_4".
+Reading "sky130_fd_sc_hd__o2111a_4".
+Reading "sky130_fd_sc_hd__o2111a_2".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__o311ai_4".
+Reading "sky130_fd_sc_hd__o311ai_2".
+Reading "sky130_fd_sc_hd__o311ai_1".
+Reading "sky130_fd_sc_hd__o311ai_0".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__o2111ai_2".
+Reading "sky130_fd_sc_hd__o2111ai_4".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or2b_2".
+Reading "sky130_fd_sc_hd__or2b_4".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4bb_2".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4_4".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__nor4b_4".
+Reading "sky130_fd_sc_hd__nor4bb_1".
+Reading "sky130_fd_sc_hd__nor4bb_2".
+Reading "sky130_fd_sc_hd__nor4bb_4".
+Moving label "k" from mvpsubdiff to ndiff in cell sky130_fd_sc_hd__nor4bb_4.
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_4".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_2".
+Reading "sky130_fd_sc_hd__o2bb2ai_4".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21ba_4".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__o31ai_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o32ai_1".
+Reading "sky130_fd_sc_hd__o32ai_2".
+Reading "sky130_fd_sc_hd__o32ai_4".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__o41a_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__macro_sparecell".
+Reading "sky130_fd_sc_hd__maj3_1".
+Reading "sky130_fd_sc_hd__maj3_2".
+Reading "sky130_fd_sc_hd__maj3_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__mux2i_2".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__mux2i_4".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__mux4_4".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nand4b_4".
+Reading "sky130_fd_sc_hd__nand4bb_1".
+Reading "sky130_fd_sc_hd__nand4bb_2".
+Reading "sky130_fd_sc_hd__nand4bb_4".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__einvp_1".
+Reading "sky130_fd_sc_hd__einvp_2".
+Reading "sky130_fd_sc_hd__einvp_4".
+Reading "sky130_fd_sc_hd__einvp_8".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fa_2".
+Reading "sky130_fd_sc_hd__fa_4".
+Reading "sky130_fd_sc_hd__fah_1".
+Reading "sky130_fd_sc_hd__fahcin_1".
+Reading "sky130_fd_sc_hd__fahcon_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__ha_2".
+Reading "sky130_fd_sc_hd__ha_4".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_bleeder_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_3".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_6".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0n_1".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_12".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_inputisolatch_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1n_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0p_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_4".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_2".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_8".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_16".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrckapwr_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfsbp_1".
+Reading "sky130_fd_sc_hd__dfsbp_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__dfstp_2".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__dlclkp_1".
+Reading "sky130_fd_sc_hd__dlclkp_2".
+Reading "sky130_fd_sc_hd__dlclkp_4".
+Reading "sky130_fd_sc_hd__dlrbn_1".
+Reading "sky130_fd_sc_hd__dlrbp_1".
+Reading "sky130_fd_sc_hd__dlrtn_1".
+Reading "sky130_fd_sc_hd__dlrtn_2".
+Reading "sky130_fd_sc_hd__dlrbn_2".
+Reading "sky130_fd_sc_hd__dlrbp_2".
+Reading "sky130_fd_sc_hd__dlrtn_4".
+Reading "sky130_fd_sc_hd__dlrtp_1".
+Reading "sky130_fd_sc_hd__dlrtp_2".
+Reading "sky130_fd_sc_hd__dlrtp_4".
+Reading "sky130_fd_sc_hd__dlxbn_1".
+Reading "sky130_fd_sc_hd__dlxbn_2".
+Reading "sky130_fd_sc_hd__dlxbp_1".
+Reading "sky130_fd_sc_hd__dlxtn_1".
+Reading "sky130_fd_sc_hd__dlxtn_2".
+Reading "sky130_fd_sc_hd__dlxtn_4".
+Reading "sky130_fd_sc_hd__dlxtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd1_1".
+Reading "sky130_fd_sc_hd__dlygate4sd2_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s4s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s6s_1".
+Reading "sky130_fd_sc_hd__ebufn_1".
+Reading "sky130_fd_sc_hd__ebufn_2".
+Reading "sky130_fd_sc_hd__ebufn_4".
+Reading "sky130_fd_sc_hd__einvn_0".
+Reading "sky130_fd_sc_hd__einvn_1".
+Reading "sky130_fd_sc_hd__einvn_2".
+Reading "sky130_fd_sc_hd__einvn_4".
+Reading "sky130_fd_sc_hd__ebufn_8".
+Reading "sky130_fd_sc_hd__edfxbp_1".
+Reading "sky130_fd_sc_hd__edfxtp_1".
+Reading "sky130_fd_sc_hd__einvn_8".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__buf_16".
+Reading "sky130_fd_sc_hd__bufbuf_8".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__bufinv_8".
+Reading "sky130_fd_sc_hd__bufbuf_16".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__dfbbn_1".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__clkinvlp_2".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__dfbbn_2".
+Reading "sky130_fd_sc_hd__dfbbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_2".
+Reading "sky130_fd_sc_hd__dfrtn_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a32oi_2".
+Reading "sky130_fd_sc_hd__a32oi_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__a41o_4".
+Reading "sky130_fd_sc_hd__a41oi_1".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__a41oi_4".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a211oi_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a211oi_4".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a221oi_4".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__a311oi_1".
+Reading "sky130_fd_sc_hd__a311oi_2".
+Reading "sky130_fd_sc_hd__a311oi_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a2111oi_0".
+Reading "sky130_fd_sc_hd__a2111oi_1".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "sky130_fd_sc_hd__a2111oi_2".
+Reading "sky130_fd_sc_hd__a2111oi_4".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3b_2".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_ef_sc_hd__fill_4".
+Reading "sky130_ef_sc_hd__fill_8".
+Reading "sky130_ef_sc_hd__fill_12".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_2".
+Reading "sky130_fd_sc_hd__a2bb2oi_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__a21boi_0".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__a31oi_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__a32o_4".
+Cell sky130_sram_128B_1rw_32x32 couldn't be read
+No such file or directory
+Creating new cell
+{FIXED_BBOX 0 0 62136 33514} {GDS_FILE src/sky130_sram_128B_1rw_32x32.gds} {GDS_START 0} {LEFview true}
+> set GDS_FILE of sky130_sram_128B_1rw_32x32 to src/sky130_sram_128B_1rw_32x32.gds
+Cell (NEWCELL) couldn't be read
+No such file or directory
+Creating new cell
+> lef read /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> def read /workspaces/tt25a_openram_testchip/runs/wokwi/52-odb-cellfrequencytables/tt_um_openram_top.def -noblockage
+Reading DEF data from file /workspaces/tt25a_openram_testchip/runs/wokwi/52-odb-cellfrequencytables/tt_um_openram_top.def.
+This action cannot be undone.
+  Processed 5 vias total.
+  Processed 1791 subcell instances total.
+  Processed 45 pins total.
+  Processed 4 special nets total.
+  Processed 656 nets total.
+DEF read: Processed 12957 lines.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  334.880 x 225.760  ( 0.000,  0.000), ( 334.880,  225.760)  75602.500 
+lambda:   33488.00 x 22576.00  (  0.00,  0.00 ), ( 33488.00,  22576.00)  756025088.00
+internal:  66976 x 45152   (     0,  0    ), ( 66976,  45152)  3024100352
+   Copying output for cell sky130_ef_sc_hd__decap_12 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__decap_8 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__decap_3 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__diode_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__decap_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__fill_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__decap_6 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__mux2_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__dlygate4sd3_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__dfrtp_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__fill_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__buf_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__dfrtp_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkbuf_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkinv_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkbuf_16 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__inv_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_sram_128B_1rw_32x32 from src/sky130_sram_128B_1rw_32x32.gds
+Reading "sky130_sram_128B_1rw_32x32".
+Diagnostic:  sky130_sram_128B_1rw_32x32_bank is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_control_logic_rw is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_row_addr_dff is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_wmask_dff is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_data_dff is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_spare_wen_dff is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_26 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_8 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_20 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_7 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_cr_1 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_12 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_13 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_31 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_bank".
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_capped_replica_bitcell_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_port_data is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_port_address is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_sky130_capped_replica_bitcell_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_replica_bitcell_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_col_cap_array_0 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_col_cap_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_row_cap_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_row_cap_array_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_sky130_replica_bitcell_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_bitcell_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_replica_column is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_dummy_array is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_sky130_bitcell_array".
+Diagnostic:  sky130_fd_bd_sram__sram_sp_cell_opt1 is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrap is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrap_p is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_cell_opt1a is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrapa is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly_sizing".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serif".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serifs".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1m_sizing".
+Reading "sky130_fd_bd_sram__sram_sp_cell_via".
+Reading "sky130_fd_bd_sram__sram_sp_cell_metopt1".
+Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly".
+Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serif_pmos".
+Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serif_nmos".
+Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serifs".
+Reading "sky130_fd_bd_sram__sram_sp_cell".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1_ce".
+Reading "sky130_fd_bd_sram__sram_sp_cell_met2".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_met2".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_ce".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_met2".
+Reading "sky130_fd_bd_sram__sram_l1m1".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_ce".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1a".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrapa_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrapa".
+Reading "sky130_sram_128B_1rw_32x32_sky130_replica_column".
+Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1_replica is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1a_replica is a forward reference?
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_replica".
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1a_replica".
+Reading "sky130_sram_128B_1rw_32x32_sky130_dummy_array".
+Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1_dummy is a forward reference?
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_dummy".
+Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array_0".
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda_p_cent is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda_cent is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_colenda".
+Reading "sky130_fd_bd_sram__sram_sp_colenda_p_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colenda_cent".
+Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array".
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colend is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colend_p_cent is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_colend_cent is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_colend".
+Reading "sky130_fd_bd_sram__sram_sp_colend_p_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colend_cent".
+Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array".
+Diagnostic:  sky130_fd_bd_sram__sram_sp_corner is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_rowend is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_rowenda is a forward reference?
+Diagnostic:  sky130_fd_bd_sram__sram_sp_cornera is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_corner_met2".
+Reading "sky130_fd_bd_sram__sram_sp_corner_p1m_serif".
+Reading "sky130_fd_bd_sram__sram_sp_corner_ce".
+Reading "sky130_fd_bd_sram__sram_sp_corner".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_ce".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_met2".
+Reading "sky130_fd_bd_sram__sram_sp_rowend".
+Reading "sky130_fd_bd_sram__sram_sp_rowenda_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_rowenda".
+Reading "sky130_fd_bd_sram__sram_sp_cornera_p1m_serif".
+Reading "sky130_fd_bd_sram__sram_sp_cornera".
+Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array_0".
+Diagnostic:  sky130_fd_bd_sram__sram_sp_cornerb is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_corner_met2_b".
+Reading "sky130_fd_bd_sram__sram_sp_cornerb".
+Reading "sky130_sram_128B_1rw_32x32_contact_7".
+Reading "sky130_sram_128B_1rw_32x32_contact_8".
+Reading "sky130_sram_128B_1rw_32x32_port_data".
+Diagnostic:  sky130_sram_128B_1rw_32x32_precharge_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_sense_amp_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_write_driver_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_write_mask_and_array is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_precharge_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_precharge_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_precharge_0".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w0_550_sli_dli is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_15 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_21 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w0_550_sli_dli".
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_11 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_contact_11".
+Reading "sky130_sram_128B_1rw_32x32_contact_15".
+Reading "sky130_sram_128B_1rw_32x32_contact_13".
+Reading "sky130_sram_128B_1rw_32x32_contact_12".
+Reading "sky130_sram_128B_1rw_32x32_contact_21".
+Reading "sky130_sram_128B_1rw_32x32_sense_amp_array".
+Diagnostic:  sky130_fd_bd_sram__openram_sense_amp is a forward reference?
+Reading "sky130_fd_bd_sram__openram_sense_amp".
+Reading "sky130_sram_128B_1rw_32x32_write_driver_array".
+Diagnostic:  sky130_fd_bd_sram__openram_write_driver is a forward reference?
+Reading "sky130_fd_bd_sram__openram_write_driver".
+Reading "sky130_sram_128B_1rw_32x32_write_mask_and_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pand2 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pand2".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pnand2".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sli_dactive is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dli is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sli_dactive".
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_10 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_contact_10".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dli".
+Reading "sky130_sram_128B_1rw_32x32_pdriver".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m2_w1_260_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m2_w0_740_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_22 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_23 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w1_260_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w0_740_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_contact_22".
+Reading "sky130_sram_128B_1rw_32x32_contact_23".
+Reading "sky130_sram_128B_1rw_32x32_port_address".
+Diagnostic:  sky130_sram_128B_1rw_32x32_hierarchical_decoder is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_wordline_driver_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_and2_dec_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_hierarchical_decoder".
+Diagnostic:  sky130_sram_128B_1rw_32x32_hierarchical_predecode2x4 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_and3_dec is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_16 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_18 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_hierarchical_predecode2x4".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_dec is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_and2_dec is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_19 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_dec".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_360_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_contact_14 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_360_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_contact_14".
+Reading "sky130_sram_128B_1rw_32x32_and2_dec".
+Diagnostic:  sky130_fd_bd_sram__openram_sp_nand2_dec is a forward reference?
+Reading "sky130_fd_bd_sram__openram_sp_nand2_dec".
+Reading "sky130_sram_128B_1rw_32x32_contact_16".
+Reading "sky130_sram_128B_1rw_32x32_contact_18".
+Reading "sky130_sram_128B_1rw_32x32_contact_19".
+Reading "sky130_sram_128B_1rw_32x32_and3_dec".
+Diagnostic:  sky130_fd_bd_sram__openram_sp_nand3_dec is a forward reference?
+Reading "sky130_fd_bd_sram__openram_sp_nand3_dec".
+Reading "sky130_sram_128B_1rw_32x32_contact_20".
+Reading "sky130_sram_128B_1rw_32x32_wordline_driver_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_wordline_driver is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_wordline_driver".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_dec_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_dec_0".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w7_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w3_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w7_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w3_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_and2_dec_0".
+Reading "sky130_sram_128B_1rw_32x32_control_logic_rw".
+Diagnostic:  sky130_sram_128B_1rw_32x32_dff_buf_array is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_1 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_13 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pand2_0 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_2 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pand3 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pand3_0 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_delay_chain is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2_1 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_5 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_dff_buf_array".
+Diagnostic:  sky130_sram_128B_1rw_32x32_dff_buf_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_dff_buf_0".
+Diagnostic:  sky130_fd_bd_sram__openram_dff is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_0 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_1 is a forward reference?
+Reading "sky130_fd_bd_sram__openram_dff".
+Reading "sky130_sram_128B_1rw_32x32_pinv_0".
+Reading "sky130_sram_128B_1rw_32x32_pinv_1".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m3_w1_680_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m3_w1_680_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m3_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m3_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_1".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_5 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_6 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_7 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_8 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_9 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_5".
+Reading "sky130_sram_128B_1rw_32x32_pinv_6".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m2_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m2_w1_260_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w1_260_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_7".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m5_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m5_w1_680_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m5_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m5_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_8".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m13_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m13_w2_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m13_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m13_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_9".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m37_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m37_w2_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m37_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m37_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_13".
+Reading "sky130_sram_128B_1rw_32x32_pand2_0".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2_0 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_0 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pnand2_0".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_0".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_2 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_2".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m7_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m7_w1_680_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m7_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m7_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_2".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_10 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_10".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m6_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m6_w2_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m6_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m6_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pand3".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pnand3 is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_3 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pnand3".
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dactive is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dactive".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_3".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_11 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_11".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m22_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m22_w2_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m22_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m22_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pand3_0".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_4 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pdriver_4".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_12 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_12".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m18_w2_000_sli_dli_da_p is a forward reference?
+Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m18_w2_000_sli_dli_da_p is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m18_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m18_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_delay_chain".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_15 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_15".
+Reading "sky130_sram_128B_1rw_32x32_pnand2_1".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_5".
+Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_14 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pinv_14".
+Reading "sky130_sram_128B_1rw_32x32_contact_26".
+Reading "sky130_sram_128B_1rw_32x32_row_addr_dff".
+Reading "sky130_sram_128B_1rw_32x32_wmask_dff".
+Reading "sky130_sram_128B_1rw_32x32_data_dff".
+Reading "sky130_sram_128B_1rw_32x32_spare_wen_dff".
+Reading "sky130_sram_128B_1rw_32x32_cr_1".
+Reading "sky130_sram_128B_1rw_32x32_contact_31".
+   Copying output for cell sky130_fd_sc_hd__tapvpwrvgnd_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__inv_6 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__bufinv_16 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__dfrtp_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkinvlp_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkbuf_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkbuf_8 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__nand2_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__buf_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__conb_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkbuf_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Copying output for cell sky130_fd_sc_hd__clkinv_2 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+   Generating output for cell tt_um_openram_top
+[INFO] GDS Write Complete

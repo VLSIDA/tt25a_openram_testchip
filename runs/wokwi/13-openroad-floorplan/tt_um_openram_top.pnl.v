@@ -447,7 +447,7 @@ module tt_um_openram_top (clk,
  wire vccd1;
  wire vssd1;
 
- sky130_sram_256B_1rw_32x64 SRAM (.csb0(ui_in[5]),
+ sky130_sram_128B_1rw_32x32 SRAM (.csb0(ui_in[5]),
     .web0(ui_in[6]),
     .clk0(ui_in[3]),
     .spare_wen0(ui_in[7]),

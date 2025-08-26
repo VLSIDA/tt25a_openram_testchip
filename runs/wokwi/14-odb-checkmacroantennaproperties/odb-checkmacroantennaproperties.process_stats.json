@@ -12,9 +12,9 @@
         "threads": 2
     },
     "avg_resources": {
-        "cpu_percent": 53.739999999999995,
+        "cpu_percent": 53.7,
         "memory_rss": "49MiB",
-        "memory_vms": "106MiB",
+        "memory_vms": "105MiB",
         "threads": 1.2
     }
 }

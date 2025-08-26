@@ -2881,7 +2881,7 @@ module tt_um_openram_top(ui_in, uo_out, uio_in, uio_out, uio_oe, ena, clk, rst_n
     .A(\scan_chain.scan_cells[0].scan_cell.data_out ),
     .X(uo_out[1])
   );
-  sky130_sram_256B_1rw_32x64 SRAM (
+  sky130_sram_128B_1rw_32x32 SRAM (
     .addr0({ \scan_chain.scan_cells[71].scan_cell.data_in , \scan_chain.scan_cells[70].scan_cell.data_in , \scan_chain.scan_cells[69].scan_cell.data_in , \scan_chain.scan_cells[68].scan_cell.data_in , \scan_chain.scan_cells[67].scan_cell.data_in , \scan_chain.scan_cells[66].scan_cell.data_in  }),
     .clk0(ui_in[3]),
     .csb0(ui_in[5]),

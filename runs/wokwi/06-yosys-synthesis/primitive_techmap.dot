@@ -1857,7 +1857,7 @@ x388 [ shape=record, style=rounded, label="<s0> 4:4 - 0:0 ", color="black", font
 x388:e -> c1190:p1042:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", label=""];
 x389 [ shape=record, style=rounded, label="<s0> 1:1 - 0:0 ", color="black", fontcolor="black" ];
 x389:e -> c1190:p1044:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", label=""];
-c1199 [ shape=record, label="{{<p1191> addr0|<p1192> clk0|<p1193> csb0|<p1194> din0|<p1195> spare_wen0|<p1196> web0|<p1197> wmask0}|SRAM\nsky130_sram_256B_1rw_32x64|{<p1198> dout0}}",  ];
+c1199 [ shape=record, label="{{<p1191> addr0|<p1192> clk0|<p1193> csb0|<p1194> din0|<p1195> spare_wen0|<p1196> web0|<p1197> wmask0}|SRAM\nsky130_sram_128B_1rw_32x32|{<p1198> dout0}}",  ];
 x390 [ shape=record, style=rounded, label="<s5> 0:0 - 5:5 |<s4> 0:0 - 4:4 |<s3> 0:0 - 3:3 |<s2> 0:0 - 2:2 |<s1> 0:0 - 1:1 |<s0> 0:0 - 0:0 ", color="black", fontcolor="black" ];
 x390:e -> c1199:p1191:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", style="setlinewidth(3)", label=""];
 x391 [ shape=record, style=rounded, label="<s0> 3:3 - 0:0 ", color="black", fontcolor="black" ];

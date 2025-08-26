@@ -5,8 +5,8 @@ Corner           : nom_tt_025C_1v80
 Supply voltage   : 1.80e+00 V
 Worstcase voltage: 1.80e+00 V
 Average voltage  : 1.80e+00 V
-Average IR drop  : 3.78e-07 V
-Worstcase IR drop: 1.45e-06 V
+Average IR drop  : 3.85e-07 V
+Worstcase IR drop: 1.46e-06 V
 Percentage drop  : 0.00 %
 ######################################
 [INFO PSM-0040] All shapes on net VGND are connected.
@@ -14,9 +14,9 @@ Percentage drop  : 0.00 %
 Net              : VGND
 Corner           : nom_tt_025C_1v80
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 1.48e-06 V
-Average voltage  : 4.15e-07 V
-Average IR drop  : 4.15e-07 V
-Worstcase IR drop: 1.48e-06 V
+Worstcase voltage: 1.70e-06 V
+Average voltage  : 4.03e-07 V
+Average IR drop  : 4.03e-07 V
+Worstcase IR drop: 1.70e-06 V
 Percentage drop  : 0.00 %
 ######################################

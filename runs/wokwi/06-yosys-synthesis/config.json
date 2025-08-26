@@ -152,12 +152,12 @@
     ],
     "EXTRA_EXCLUDED_CELLS": null,
     "MACROS": {
-        "sky130_sram_256B_1rw_32x64": {
+        "sky130_sram_128B_1rw_32x32": {
             "gds": [
-                "src/sky130_sram_256B_1rw_32x64.gds"
+                "src/sky130_sram_128B_1rw_32x32.gds"
             ],
             "lef": [
-                "src/sky130_sram_256B_1rw_32x64.lef"
+                "src/sky130_sram_128B_1rw_32x32.lef"
             ],
             "instances": {
                 "SRAM": {
@@ -170,7 +170,7 @@
             },
             "vh": [],
             "nl": [
-                "src/sky130_sram_256B_1rw_32x64.v"
+                "src/sky130_sram_128B_1rw_32x32.v"
             ],
             "pnl": [],
             "spef": {},
@@ -181,7 +181,7 @@
         }
     },
     "EXTRA_LEFS": [
-        "src/sky130_sram_256B_1rw_32x64.lef"
+        "src/sky130_sram_128B_1rw_32x32.lef"
     ],
     "EXTRA_VERILOG_MODELS": null,
     "EXTRA_SPICE_MODELS": null,
@@ -222,7 +222,7 @@
         "/workspaces/tt25a_openram_testchip/src/project.v",
         "/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v",
         "/workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v",
-        "/workspaces/tt25a_openram_testchip/src/sky130_sram_256B_1rw_32x64.v"
+        "/workspaces/tt25a_openram_testchip/src/sky130_sram_128B_1rw_32x32.v"
     ],
     "VERILOG_DEFINES": null,
     "VERILOG_POWER_DEFINE": "USE_POWER_PINS",

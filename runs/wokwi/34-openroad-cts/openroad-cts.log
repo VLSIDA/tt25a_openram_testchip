@@ -62,24 +62,24 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
 [INFO CTS-0030]  Number of static layers: 0.
 [INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
-[INFO CTS-0023]  Original sink region: [(42125, 28620), (321275, 219020)].
-[INFO CTS-0024]  Normalized sink region: [(3.09743, 2.10441), (23.6232, 16.1044)].
+[INFO CTS-0023]  Original sink region: [(42125, 25780), (321275, 219020)].
+[INFO CTS-0024]  Normalized sink region: [(3.09743, 1.89559), (23.6232, 16.1044)].
 [INFO CTS-0025]     Width:  20.5257.
-[INFO CTS-0026]     Height: 14.0000.
+[INFO CTS-0026]     Height: 14.2088.
  Level 1
     Direction: Horizontal
     Sinks per sub-region: 36
-    Sub-region size: 10.2629 X 14.0000
+    Sub-region size: 10.2629 X 14.2088
 [INFO CTS-0034]     Segment length (rounded): 6.
  Level 2
     Direction: Vertical
     Sinks per sub-region: 18
-    Sub-region size: 10.2629 X 7.0000
+    Sub-region size: 10.2629 X 7.1044
 [INFO CTS-0034]     Segment length (rounded): 4.
  Level 3
     Direction: Horizontal
     Sinks per sub-region: 9
-    Sub-region size: 5.1314 X 7.0000
+    Sub-region size: 5.1314 X 7.1044
 [INFO CTS-0034]     Segment length (rounded): 2.
 [INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
 [INFO CTS-0035]  Number of sinks covered: 72.
@@ -87,26 +87,26 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
 [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
 [INFO CTS-0015]     Created 9 clock nets.
-[INFO CTS-0016]     Fanout distribution for the current clock = 7:3, 8:1, 9:1, 10:1, 12:1, 13:1..
+[INFO CTS-0016]     Fanout distribution for the current clock = 7:2, 8:3, 9:1, 13:2..
 [INFO CTS-0017]     Max level of the clock tree: 3.
 [INFO CTS-0018]     Created 9 clock buffers.
 [INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
 [INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
 [INFO CTS-0015]     Created 9 clock nets.
-[INFO CTS-0016]     Fanout distribution for the current clock = 7:3, 9:2, 10:2, 13:1..
+[INFO CTS-0016]     Fanout distribution for the current clock = 7:3, 9:1, 10:3, 12:1..
 [INFO CTS-0017]     Max level of the clock tree: 3.
 [INFO CTS-0098] Clock net "ui_in[3]"
-[INFO CTS-0099]  Sinks 80
+[INFO CTS-0099]  Sinks 79
 [INFO CTS-0100]  Leaf buffers 0
-[INFO CTS-0101]  Average sink wire length 326.03 um
+[INFO CTS-0101]  Average sink wire length 325.85 um
 [INFO CTS-0102]  Path depth 2 - 2
-[INFO CTS-0207]  Leaf load cells 14
+[INFO CTS-0207]  Leaf load cells 13
 [INFO CTS-0098] Clock net "ui_in[4]"
 [INFO CTS-0099]  Sinks 79
 [INFO CTS-0100]  Leaf buffers 0
-[INFO CTS-0101]  Average sink wire length 315.87 um
+[INFO CTS-0101]  Average sink wire length 316.52 um
 [INFO CTS-0102]  Path depth 2 - 2
-[INFO CTS-0207]  Leaf load cells 14
+[INFO CTS-0207]  Leaf load cells 13
 [INFO] Repairing long wires on clock nets…
 [INFO RSZ-0058] Using max wire length 5786um.
 Setting global connections for newly added cells…
@@ -118,12 +118,12 @@ Cell type report:                       Count       Area
   Fill cell                               162     608.08
   Tap cell                                200     250.24
   Buffer                                    2      10.01
-  Clock buffer                             19     457.94
-  Timing Repair Buffer                     57     369.10
-  Clock inverter                           13     165.16
+  Clock buffer                             21     491.72
+  Timing Repair Buffer                     56     364.10
+  Clock inverter                           10      93.84
   Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                   870   60491.23
+  Total                                   868   60448.69
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.pnl.v'…
@@ -132,17 +132,17 @@ Writing timing constraints to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-
 [INFO] Legalizing…
 Placement Analysis
 ---------------------------------
-total displacement        832.3 u
-average displacement        1.0 u
+total displacement        781.1 u
+average displacement        0.9 u
 max displacement           72.1 u
-original HPWL           25765.7 u
-legalized HPWL          26116.9 u
-delta HPWL                    1 %
+original HPWL           25640.1 u
+legalized HPWL          26034.2 u
+delta HPWL                    2 %
 
-[INFO DPL-0020] Mirrored 136 instances
-[INFO DPL-0021] HPWL before           26116.9 u
-[INFO DPL-0022] HPWL after            25794.3 u
-[INFO DPL-0023] HPWL delta               -1.2 %
+[INFO DPL-0020] Mirrored 142 instances
+[INFO DPL-0021] HPWL before           26034.2 u
+[INFO DPL-0022] HPWL after            25770.3 u
+[INFO DPL-0023] HPWL delta               -1.0 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 SRAM matched with SRAM
@@ -152,12 +152,12 @@ Cell type report:                       Count       Area
   Fill cell                               162     608.08
   Tap cell                                200     250.24
   Buffer                                    2      10.01
-  Clock buffer                             19     457.94
-  Timing Repair Buffer                     57     369.10
-  Clock inverter                           13     165.16
+  Clock buffer                             21     491.72
+  Timing Repair Buffer                     56     364.10
+  Clock inverter                           10      93.84
   Sequential cell                         144    3677.28
   Multi-Input combinational cell          272    2892.77
-  Total                                   870   60491.23
+  Total                                   868   60448.69
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/34-openroad-cts/tt_um_openram_top.pnl.v'…

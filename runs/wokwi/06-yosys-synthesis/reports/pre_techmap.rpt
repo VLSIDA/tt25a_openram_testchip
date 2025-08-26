@@ -15,10 +15,10 @@
      $_AND_                          1
      $_DFFE_PN0P_                  144
      $_MUX_                        105
-     sky130_sram_256B_1rw_32x64      1
+     sky130_sram_128B_1rw_32x32      1
 
    Area for cell type $_AND_ is unknown!
    Area for cell type $_MUX_ is unknown!
    Area for cell type $_DFFE_PN0P_ is unknown!
-   Area for cell type \sky130_sram_256B_1rw_32x64 is unknown!
+   Area for cell type \sky130_sram_128B_1rw_32x32 is unknown!
 

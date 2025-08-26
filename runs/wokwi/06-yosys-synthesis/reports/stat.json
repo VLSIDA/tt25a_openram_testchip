@@ -1,6 +1,6 @@
 {
    "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
-   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/353493fe453a44798f0fd62806880714.lib ",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/c252e06d5add486e80e0fd66a2cf52a8.lib ",
    "modules": {
       "\\tt_um_openram_top": {
          "num_wires":         435,
@@ -20,7 +20,7 @@
             "sky130_fd_sc_hd__dfrtp_2": 144,
             "sky130_fd_sc_hd__mux2_1": 249,
             "sky130_fd_sc_hd__nand2_2": 1,
-            "sky130_sram_256B_1rw_32x64": 1
+            "sky130_sram_128B_1rw_32x32": 1
          }
       }
    },
@@ -42,7 +42,7 @@
             "sky130_fd_sc_hd__dfrtp_2": 144,
             "sky130_fd_sc_hd__mux2_1": 249,
             "sky130_fd_sc_hd__nand2_2": 1,
-            "sky130_sram_256B_1rw_32x64": 1
+            "sky130_sram_128B_1rw_32x32": 1
          }
       }
 }

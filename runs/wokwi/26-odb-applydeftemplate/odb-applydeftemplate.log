@@ -11,9 +11,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/vscode/ttsetu
 
 [INFO ODB-0227] LEF file: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
 [WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
-The NOWIREEXTENSIONATPIN statement will be ignored. See file src/sky130_sram_256B_1rw_32x64.lef at line 2.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file src/sky130_sram_128B_1rw_32x32.lef at line 2.
 
-[INFO ODB-0227] LEF file: src/sky130_sram_256B_1rw_32x64.lef, created 1 library cells
+[INFO ODB-0227] LEF file: src/sky130_sram_128B_1rw_32x32.lef, created 1 library cells
 [INFO ODB-0127] Reading DEF file: /workspaces/tt25a_openram_testchip/tt/def/tt_block_2x2_pg.def
 [INFO ODB-0128] Design: tt_um_template
 [INFO ODB-0130]     Created 43 pins.
@@ -30,9 +30,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/vscode/ttsetu
 
 [INFO ODB-0227] LEF file: /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
 [WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
-The NOWIREEXTENSIONATPIN statement will be ignored. See file src/sky130_sram_256B_1rw_32x64.lef at line 2.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file src/sky130_sram_128B_1rw_32x32.lef at line 2.
 
-[INFO ODB-0227] LEF file: src/sky130_sram_256B_1rw_32x64.lef, created 1 library cells
+[INFO ODB-0227] LEF file: src/sky130_sram_128B_1rw_32x32.lef, created 1 library cells
 [INFO ODB-0127] Reading DEF file: /workspaces/tt25a_openram_testchip/tt/def/tt_block_2x2_pg.def
 [INFO ODB-0128] Design: tt_um_template
 [INFO ODB-0130]     Created 43 pins.

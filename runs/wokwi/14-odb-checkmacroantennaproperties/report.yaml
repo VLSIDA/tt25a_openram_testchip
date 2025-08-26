@@ -1,4 +1,4 @@
-- cell: sky130_sram_256B_1rw_32x64
+- cell: sky130_sram_128B_1rw_32x32
   inout: []
   input:
   - din0[0]

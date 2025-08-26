@@ -2,7 +2,7 @@ set ::env(LIB_VOLTAGE) 1.8000000000
 set ::env(CURRENT_SPEF_DEFAULT_CORNER) /workspaces/tt25a_openram_testchip/runs/wokwi/53-openroad-rcx/nom/tt_um_openram_top.nom.spef
 set ::env(STEP_ID) OpenROAD.IRDropReport
 set ::env(TECH_LEF) /home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
-set ::env(MACRO_LEFS) src/sky130_sram_256B_1rw_32x64.lef
+set ::env(MACRO_LEFS) src/sky130_sram_128B_1rw_32x32.lef
 set ::env(STD_CELL_LIBRARY) sky130_fd_sc_hd
 set ::env(VDD_PIN) VPWR
 set ::env(VDD_PIN_VOLTAGE) 1.80
@@ -58,8 +58,8 @@ set ::env(CLOCK_NET) "\"ui_in\\\[3]\" \"ui_in\\\[4]\""
 set ::env(VDD_NETS) VPWR
 set ::env(GND_NETS) VGND
 set ::env(DIE_AREA) "0 0 334.88 225.76"
-set ::env(MACROS) "sky130_sram_256B_1rw_32x64 \"gds src/sky130_sram_256B_1rw_32x64.gds lef src/sky130_sram_256B_1rw_32x64.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_256B_1rw_32x64.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
-set ::env(EXTRA_LEFS) src/sky130_sram_256B_1rw_32x64.lef
+set ::env(MACROS) "sky130_sram_128B_1rw_32x32 \"gds src/sky130_sram_128B_1rw_32x32.gds lef src/sky130_sram_128B_1rw_32x32.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_128B_1rw_32x32.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
+set ::env(EXTRA_LEFS) src/sky130_sram_128B_1rw_32x32.lef
 set ::env(FALLBACK_SDC_FILE) src/project.sdc
 set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
 set ::env(PDN_MACRO_CONNECTIONS) "\"SRAM vccd1 vssd1 VPWR VGND\""

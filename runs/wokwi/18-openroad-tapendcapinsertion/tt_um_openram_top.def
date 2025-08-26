@@ -260,7 +260,7 @@ COMPONENTS 781 ;
     - PHY_EDGE_ROW_8_2_Right_74 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 330740 24480 ) FN ;
     - PHY_EDGE_ROW_9_2_Left_8 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 317860 27200 ) FS ;
     - PHY_EDGE_ROW_9_2_Right_75 sky130_fd_sc_hd__decap_3 + SOURCE DIST + FIXED ( 330740 27200 ) S ;
-    - SRAM sky130_sram_256B_1rw_32x64 + FIXED ( 2000 10000 ) S ;
+    - SRAM sky130_sram_128B_1rw_32x32 + FIXED ( 2000 10000 ) S ;
     - TAP_TAPCELL_ROW_67_162 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 15640 184960 ) FS ;
     - TAP_TAPCELL_ROW_67_163 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 28520 184960 ) FS ;
     - TAP_TAPCELL_ROW_67_164 sky130_fd_sc_hd__tapvpwrvgnd_1 + SOURCE DIST + FIXED ( 41400 184960 ) FS ;
