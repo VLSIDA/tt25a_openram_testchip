@@ -2,6 +2,8 @@
 // Words: 32
 // Word size: 32
 // Write size: 8
+/// sta-blackbox
+
 `ifndef SRAM_GUARD
 `define SRAM_GUARD
 

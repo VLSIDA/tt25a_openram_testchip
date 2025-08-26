@@ -21,7 +21,6 @@ Netlists found for macro sky130_sram_128B_1rw_32x32, but no parasitics extractio
 No libs found for macro sky130_sram_128B_1rw_32x32 at corner max_ss_100C_1v60. The module will be black-boxed.
 Netlists found for macro sky130_sram_128B_1rw_32x32, but no parasitics extraction found at corner max_ff_n40C_1v95. The netlist cannot be used for timing on this module.
 No libs found for macro sky130_sram_128B_1rw_32x32 at corner max_ff_n40C_1v95. The module will be black-boxed.
-[ODB-0229] Error: library (sky130_sram_128B_1rw_32x32) already exists
 [ORD-2011] LEF master sky130_sram_128B_1rw_32x32 has no liberty cell.
 [STA-0441] set_input_delay relative to a clock defined on the same port/pin not allowed.
 [STA-0441] set_input_delay relative to a clock defined on the same port/pin not allowed.
@@ -157,9 +156,6 @@ No libs found for macro sky130_sram_128B_1rw_32x32 at corner max_ff_n40C_1v95. T
 Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
 [STA-0441] set_input_delay relative to a clock defined on the same port/pin not allowed.
 [STA-0441] set_input_delay relative to a clock defined on the same port/pin not allowed.
-[ODB-0229] Error: library (sky130_sram_128B_1rw_32x32) already exists
-[ODB-0229] Error: library (sky130_sram_128B_1rw_32x32) already exists
-[ODB-0229] Error: library (sky130_sram_128B_1rw_32x32) already exists
 Netlists found for macro sky130_sram_128B_1rw_32x32, but no parasitics extraction found at corner nom_tt_025C_1v80. The netlist cannot be used for timing on this module.
 No libs found for macro sky130_sram_128B_1rw_32x32 at corner nom_tt_025C_1v80. The module will be black-boxed.
 Netlists found for macro sky130_sram_128B_1rw_32x32, but no parasitics extraction found at corner nom_ss_100C_1v60. The netlist cannot be used for timing on this module.

@@ -21,7 +21,7 @@ project:
     - "project.v"
     - "scan_cell_2ph.v"
     - "scan_chain_2ph.v"
-    - "sky130_sram_256B_1rw_32x64.v"
+    - "sky130_sram_128B_1rw_32x32.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:

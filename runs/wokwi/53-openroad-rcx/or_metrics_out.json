@@ -15,6 +15,6 @@
 	"design__instance__count__class:tap_cell": 200,
 	"design__instance__count__class:antenna_cell": 33,
 	"design__instance__count__class:standard_cell": 617,
-	"flow__warnings__count": 4,
+	"flow__warnings__count": 3,
 	"flow__errors__count": 0
 }

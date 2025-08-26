@@ -531,306 +531,171 @@ internal:  66976 x 45152   (     0,  0    ), ( 66976,  45152)  3024100352
    Copying output for cell sky130_fd_sc_hd__clkbuf_16 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
    Copying output for cell sky130_fd_sc_hd__inv_4 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
    Copying output for cell sky130_sram_128B_1rw_32x32 from src/sky130_sram_128B_1rw_32x32.gds
-Reading "sky130_sram_128B_1rw_32x32".
-Diagnostic:  sky130_sram_128B_1rw_32x32_bank is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_control_logic_rw is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_row_addr_dff is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_wmask_dff is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_data_dff is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_spare_wen_dff is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_26 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_8 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_20 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_7 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_cr_1 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_12 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_13 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_31 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_bank".
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_capped_replica_bitcell_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_port_data is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_port_address is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_sky130_capped_replica_bitcell_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_replica_bitcell_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_col_cap_array_0 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_col_cap_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_row_cap_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_row_cap_array_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_sky130_replica_bitcell_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_bitcell_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_replica_column is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sky130_dummy_array is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_sky130_bitcell_array".
-Diagnostic:  sky130_fd_bd_sram__sram_sp_cell_opt1 is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrap is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrap_p is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_cell_opt1a is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_wlstrapa is a forward reference?
-Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly_sizing".
-Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serif".
-Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serifs".
-Reading "sky130_fd_bd_sram__sram_sp_cell_p1m_sizing".
-Reading "sky130_fd_bd_sram__sram_sp_cell_via".
-Reading "sky130_fd_bd_sram__sram_sp_cell_metopt1".
-Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly".
-Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serif_pmos".
 Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serif_nmos".
-Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serifs".
-Reading "sky130_fd_bd_sram__sram_sp_cell".
-Reading "sky130_fd_bd_sram__sram_sp_cell_opt1_ce".
-Reading "sky130_fd_bd_sram__sram_sp_cell_met2".
-Reading "sky130_fd_bd_sram__sram_sp_cell_opt1".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p1m_siz".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_met2".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_ce".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_met2".
-Reading "sky130_fd_bd_sram__sram_l1m1".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_ce".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p".
-Reading "sky130_fd_bd_sram__sram_sp_cell_opt1a".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrapa_p1m_siz".
-Reading "sky130_fd_bd_sram__sram_sp_wlstrapa".
-Reading "sky130_sram_128B_1rw_32x32_sky130_replica_column".
-Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1_replica is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1a_replica is a forward reference?
-Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_replica".
-Reading "sky130_fd_bd_sram__openram_sp_cell_opt1a_replica".
-Reading "sky130_sram_128B_1rw_32x32_sky130_dummy_array".
-Diagnostic:  sky130_fd_bd_sram__openram_sp_cell_opt1_dummy is a forward reference?
-Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_dummy".
-Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array_0".
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda_p_cent is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colenda_cent is a forward reference?
-Reading "sky130_fd_bd_sram__sram_sp_colenda".
-Reading "sky130_fd_bd_sram__sram_sp_colenda_p_cent".
-Reading "sky130_fd_bd_sram__sram_sp_colenda_cent".
-Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array".
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colend is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colend_p_cent is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_colend_cent is a forward reference?
-Reading "sky130_fd_bd_sram__sram_sp_colend".
-Reading "sky130_fd_bd_sram__sram_sp_colend_p_cent".
-Reading "sky130_fd_bd_sram__sram_sp_colend_cent".
-Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array".
-Diagnostic:  sky130_fd_bd_sram__sram_sp_corner is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_rowend is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_rowenda is a forward reference?
-Diagnostic:  sky130_fd_bd_sram__sram_sp_cornera is a forward reference?
-Reading "sky130_fd_bd_sram__sram_sp_corner_met2".
-Reading "sky130_fd_bd_sram__sram_sp_corner_p1m_serif".
-Reading "sky130_fd_bd_sram__sram_sp_corner_ce".
-Reading "sky130_fd_bd_sram__sram_sp_corner".
-Reading "sky130_fd_bd_sram__sram_sp_rowend_ce".
-Reading "sky130_fd_bd_sram__sram_sp_rowend_p1m_siz".
-Reading "sky130_fd_bd_sram__sram_sp_rowend_met2".
-Reading "sky130_fd_bd_sram__sram_sp_rowend".
-Reading "sky130_fd_bd_sram__sram_sp_rowenda_p1m_siz".
-Reading "sky130_fd_bd_sram__sram_sp_rowenda".
-Reading "sky130_fd_bd_sram__sram_sp_cornera_p1m_serif".
-Reading "sky130_fd_bd_sram__sram_sp_cornera".
-Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array_0".
-Diagnostic:  sky130_fd_bd_sram__sram_sp_cornerb is a forward reference?
-Reading "sky130_fd_bd_sram__sram_sp_corner_met2_b".
-Reading "sky130_fd_bd_sram__sram_sp_cornerb".
-Reading "sky130_sram_128B_1rw_32x32_contact_7".
-Reading "sky130_sram_128B_1rw_32x32_contact_8".
-Reading "sky130_sram_128B_1rw_32x32_port_data".
-Diagnostic:  sky130_sram_128B_1rw_32x32_precharge_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_sense_amp_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_write_driver_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_write_mask_and_array is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_precharge_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_precharge_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_precharge_0".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w0_550_sli_dli is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_15 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_21 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w0_550_sli_dli".
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_11 is a forward reference?
+Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serif_pmos".
+Reading "sky130_sram_128B_1rw_32x32_contact_10".
 Reading "sky130_sram_128B_1rw_32x32_contact_11".
+Reading "sky130_fd_bd_sram__sram_sp_cell_fom_serifs".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serif".
+Reading "sky130_sram_128B_1rw_32x32_contact_14".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_360_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_contact_23".
+Reading "sky130_sram_128B_1rw_32x32_contact_22".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w0_740_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w1_260_sli_dli_da_p".
 Reading "sky130_sram_128B_1rw_32x32_contact_15".
+Reading "sky130_fd_bd_sram__sram_l1m1".
+Reading "sky130_fd_bd_sram__sram_sp_cell".
+Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly".
+Reading "sky130_fd_bd_sram__sram_sp_cell_metopt1".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1_serifs".
 Reading "sky130_sram_128B_1rw_32x32_contact_13".
 Reading "sky130_sram_128B_1rw_32x32_contact_12".
-Reading "sky130_sram_128B_1rw_32x32_contact_21".
-Reading "sky130_sram_128B_1rw_32x32_sense_amp_array".
-Diagnostic:  sky130_fd_bd_sram__openram_sense_amp is a forward reference?
-Reading "sky130_fd_bd_sram__openram_sense_amp".
-Reading "sky130_sram_128B_1rw_32x32_write_driver_array".
-Diagnostic:  sky130_fd_bd_sram__openram_write_driver is a forward reference?
-Reading "sky130_fd_bd_sram__openram_write_driver".
-Reading "sky130_sram_128B_1rw_32x32_write_mask_and_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pand2 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pand2".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pnand2".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sli_dactive is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dli is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sli_dactive".
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_10 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_contact_10".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dli".
-Reading "sky130_sram_128B_1rw_32x32_pdriver".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m2_w1_260_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m2_w0_740_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_22 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_23 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w1_260_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w0_740_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_contact_22".
-Reading "sky130_sram_128B_1rw_32x32_contact_23".
-Reading "sky130_sram_128B_1rw_32x32_port_address".
-Diagnostic:  sky130_sram_128B_1rw_32x32_hierarchical_decoder is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_wordline_driver_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_and2_dec_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_hierarchical_decoder".
-Diagnostic:  sky130_sram_128B_1rw_32x32_hierarchical_predecode2x4 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_and3_dec is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_16 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_18 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_hierarchical_predecode2x4".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_dec is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_and2_dec is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_19 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_dec".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_360_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_contact_14 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_360_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_contact_14".
-Reading "sky130_sram_128B_1rw_32x32_and2_dec".
-Diagnostic:  sky130_fd_bd_sram__openram_sp_nand2_dec is a forward reference?
-Reading "sky130_fd_bd_sram__openram_sp_nand2_dec".
-Reading "sky130_sram_128B_1rw_32x32_contact_16".
-Reading "sky130_sram_128B_1rw_32x32_contact_18".
-Reading "sky130_sram_128B_1rw_32x32_contact_19".
-Reading "sky130_sram_128B_1rw_32x32_and3_dec".
-Diagnostic:  sky130_fd_bd_sram__openram_sp_nand3_dec is a forward reference?
-Reading "sky130_fd_bd_sram__openram_sp_nand3_dec".
-Reading "sky130_sram_128B_1rw_32x32_contact_20".
-Reading "sky130_sram_128B_1rw_32x32_wordline_driver_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_wordline_driver is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_wordline_driver".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_dec_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_dec_0".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m1_w7_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w3_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w7_000_sli_dli_da_p".
 Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w3_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_and2_dec_0".
-Reading "sky130_sram_128B_1rw_32x32_control_logic_rw".
-Diagnostic:  sky130_sram_128B_1rw_32x32_dff_buf_array is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_1 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_13 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pand2_0 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_2 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pand3 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pand3_0 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_delay_chain is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2_1 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_5 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_dff_buf_array".
-Diagnostic:  sky130_sram_128B_1rw_32x32_dff_buf_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_dff_buf_0".
-Diagnostic:  sky130_fd_bd_sram__openram_dff is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_0 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_1 is a forward reference?
-Reading "sky130_fd_bd_sram__openram_dff".
-Reading "sky130_sram_128B_1rw_32x32_pinv_0".
-Reading "sky130_sram_128B_1rw_32x32_pinv_1".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m3_w1_680_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m3_w1_680_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m3_w1_680_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m3_w1_680_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pdriver_1".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_5 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_6 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_7 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_8 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_9 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_5".
-Reading "sky130_sram_128B_1rw_32x32_pinv_6".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m2_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m2_w1_260_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w1_260_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pinv_7".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m5_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m5_w1_680_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m5_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m5_w1_680_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pinv_8".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m13_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m13_w2_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m13_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m13_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pinv_9".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m37_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m37_w2_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m37_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m37_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pinv_13".
-Reading "sky130_sram_128B_1rw_32x32_pand2_0".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pnand2_0 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_0 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pnand2_0".
-Reading "sky130_sram_128B_1rw_32x32_pdriver_0".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_2 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_2".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m7_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m7_w1_680_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m7_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m7_w1_680_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pdriver_2".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_10 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_10".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m6_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m6_w2_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m6_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m6_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pand3".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pnand3 is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_3 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pnand3".
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dactive is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dactive".
-Reading "sky130_sram_128B_1rw_32x32_pdriver_3".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_11 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_11".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m22_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m22_w2_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m22_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_nmos_m22_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_pand3_0".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pdriver_4 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pdriver_4".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_12 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_12".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pmos_m18_w2_000_sli_dli_da_p is a forward reference?
-Diagnostic:  sky130_sram_128B_1rw_32x32_nmos_m18_w2_000_sli_dli_da_p is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pmos_m18_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w7_000_sli_dli_da_p".
+Reading "sky130_fd_bd_sram__openram_sp_nand2_dec".
+Reading "sky130_sram_128B_1rw_32x32_pinv_dec".
+Reading "sky130_sram_128B_1rw_32x32_pinv".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dli".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sli_dactive".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w1_120_sli_dli".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrapa_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_ce".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p_met2".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_ce".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_met2".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_cell_met2".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1_ce".
+Reading "sky130_fd_bd_sram__sram_sp_cell_via".
+Reading "sky130_fd_bd_sram__sram_sp_cell_p1m_sizing".
+Reading "sky130_fd_bd_sram__sram_sp_cell_addpoly_sizing".
 Reading "sky130_sram_128B_1rw_32x32_nmos_m18_w2_000_sli_dli_da_p".
-Reading "sky130_sram_128B_1rw_32x32_delay_chain".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_15 is a forward reference?
-Reading "sky130_sram_128B_1rw_32x32_pinv_15".
-Reading "sky130_sram_128B_1rw_32x32_pnand2_1".
-Reading "sky130_sram_128B_1rw_32x32_pdriver_5".
-Diagnostic:  sky130_sram_128B_1rw_32x32_pinv_14 is a forward reference?
+Reading "sky130_sram_128B_1rw_32x32_pmos_m18_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m22_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m22_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m7_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m7_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m3_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m3_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_dec_0".
+Reading "sky130_fd_bd_sram__openram_sp_nand3_dec".
+Reading "sky130_sram_128B_1rw_32x32_contact_19".
+Reading "sky130_sram_128B_1rw_32x32_and2_dec".
+Reading "sky130_sram_128B_1rw_32x32_contact_18".
+Reading "sky130_sram_128B_1rw_32x32_contact_16".
+Reading "sky130_sram_128B_1rw_32x32_pdriver".
+Reading "sky130_sram_128B_1rw_32x32_pnand2".
+Reading "sky130_sram_128B_1rw_32x32_contact_21".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m1_w0_550_sli_dli".
+Reading "sky130_fd_bd_sram__sram_sp_corner_met2_b".
+Reading "sky130_fd_bd_sram__sram_sp_cornera_p1m_serif".
+Reading "sky130_fd_bd_sram__sram_sp_rowenda_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_met2".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_p1m_siz".
+Reading "sky130_fd_bd_sram__sram_sp_rowend_ce".
+Reading "sky130_fd_bd_sram__sram_sp_corner_ce".
+Reading "sky130_fd_bd_sram__sram_sp_corner_p1m_serif".
+Reading "sky130_fd_bd_sram__sram_sp_corner_met2".
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_dummy".
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1a_replica".
+Reading "sky130_fd_bd_sram__openram_sp_cell_opt1_replica".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrapa".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1a".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap_p".
+Reading "sky130_fd_bd_sram__sram_sp_wlstrap".
+Reading "sky130_fd_bd_sram__sram_sp_cell_opt1".
+Reading "sky130_sram_128B_1rw_32x32_contact_7".
+Reading "sky130_sram_128B_1rw_32x32_contact_8".
+Reading "sky130_sram_128B_1rw_32x32_pinv_12".
+Reading "sky130_sram_128B_1rw_32x32_pinv_11".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m1_w0_740_sactive_dactive".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m6_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m6_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_2".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m37_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m37_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m13_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m13_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m5_w1_680_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m5_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_nmos_m2_w1_260_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pmos_m2_w2_000_sli_dli_da_p".
+Reading "sky130_sram_128B_1rw_32x32_pinv_1".
+Reading "sky130_sram_128B_1rw_32x32_pinv_0".
+Reading "sky130_fd_bd_sram__openram_dff".
+Reading "sky130_sram_128B_1rw_32x32_wordline_driver".
+Reading "sky130_sram_128B_1rw_32x32_and3_dec".
+Reading "sky130_sram_128B_1rw_32x32_hierarchical_predecode2x4".
+Reading "sky130_sram_128B_1rw_32x32_pand2".
+Reading "sky130_fd_bd_sram__openram_write_driver".
+Reading "sky130_fd_bd_sram__openram_sense_amp".
+Reading "sky130_sram_128B_1rw_32x32_precharge_0".
+Reading "sky130_fd_bd_sram__sram_sp_cornerb".
+Reading "sky130_fd_bd_sram__sram_sp_cornera".
+Reading "sky130_fd_bd_sram__sram_sp_rowenda".
+Reading "sky130_fd_bd_sram__sram_sp_rowend".
+Reading "sky130_fd_bd_sram__sram_sp_corner".
+Reading "sky130_fd_bd_sram__sram_sp_colend_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colend_p_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colend".
+Reading "sky130_fd_bd_sram__sram_sp_colenda_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colenda_p_cent".
+Reading "sky130_fd_bd_sram__sram_sp_colenda".
+Reading "sky130_sram_128B_1rw_32x32_sky130_dummy_array".
+Reading "sky130_sram_128B_1rw_32x32_sky130_replica_column".
+Reading "sky130_sram_128B_1rw_32x32_sky130_bitcell_array".
+Reading "sky130_sram_128B_1rw_32x32_contact_20".
 Reading "sky130_sram_128B_1rw_32x32_pinv_14".
+Reading "sky130_sram_128B_1rw_32x32_pinv_15".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_4".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_3".
+Reading "sky130_sram_128B_1rw_32x32_pnand3".
+Reading "sky130_sram_128B_1rw_32x32_pinv_10".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_0".
+Reading "sky130_sram_128B_1rw_32x32_pnand2_0".
+Reading "sky130_sram_128B_1rw_32x32_pinv_9".
+Reading "sky130_sram_128B_1rw_32x32_pinv_8".
+Reading "sky130_sram_128B_1rw_32x32_pinv_7".
+Reading "sky130_sram_128B_1rw_32x32_pinv_6".
+Reading "sky130_sram_128B_1rw_32x32_pinv_5".
+Reading "sky130_sram_128B_1rw_32x32_dff_buf_0".
+Reading "sky130_sram_128B_1rw_32x32_and2_dec_0".
+Reading "sky130_sram_128B_1rw_32x32_wordline_driver_array".
+Reading "sky130_sram_128B_1rw_32x32_hierarchical_decoder".
+Reading "sky130_sram_128B_1rw_32x32_write_mask_and_array".
+Reading "sky130_sram_128B_1rw_32x32_write_driver_array".
+Reading "sky130_sram_128B_1rw_32x32_sense_amp_array".
+Reading "sky130_sram_128B_1rw_32x32_precharge_array".
+Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array_0".
+Reading "sky130_sram_128B_1rw_32x32_sky130_row_cap_array".
+Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array".
+Reading "sky130_sram_128B_1rw_32x32_sky130_col_cap_array_0".
+Reading "sky130_sram_128B_1rw_32x32_sky130_replica_bitcell_array".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_5".
+Reading "sky130_sram_128B_1rw_32x32_pnand2_1".
+Reading "sky130_sram_128B_1rw_32x32_delay_chain".
+Reading "sky130_sram_128B_1rw_32x32_pand3_0".
+Reading "sky130_sram_128B_1rw_32x32_pand3".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_2".
+Reading "sky130_sram_128B_1rw_32x32_pand2_0".
+Reading "sky130_sram_128B_1rw_32x32_pinv_13".
+Reading "sky130_sram_128B_1rw_32x32_pdriver_1".
+Reading "sky130_sram_128B_1rw_32x32_dff_buf_array".
+Reading "sky130_sram_128B_1rw_32x32_port_address".
+Reading "sky130_sram_128B_1rw_32x32_port_data".
+Reading "sky130_sram_128B_1rw_32x32_sky130_capped_replica_bitcell_array".
 Reading "sky130_sram_128B_1rw_32x32_contact_26".
-Reading "sky130_sram_128B_1rw_32x32_row_addr_dff".
-Reading "sky130_sram_128B_1rw_32x32_wmask_dff".
-Reading "sky130_sram_128B_1rw_32x32_data_dff".
-Reading "sky130_sram_128B_1rw_32x32_spare_wen_dff".
-Reading "sky130_sram_128B_1rw_32x32_cr_1".
 Reading "sky130_sram_128B_1rw_32x32_contact_31".
+Reading "sky130_sram_128B_1rw_32x32_cr_1".
+Reading "sky130_sram_128B_1rw_32x32_spare_wen_dff".
+Reading "sky130_sram_128B_1rw_32x32_data_dff".
+Reading "sky130_sram_128B_1rw_32x32_wmask_dff".
+Reading "sky130_sram_128B_1rw_32x32_row_addr_dff".
+Reading "sky130_sram_128B_1rw_32x32_control_logic_rw".
+Reading "sky130_sram_128B_1rw_32x32_bank".
+Reading "sky130_sram_128B_1rw_32x32".
    Copying output for cell sky130_fd_sc_hd__tapvpwrvgnd_1 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
    Copying output for cell sky130_fd_sc_hd__inv_6 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
    Copying output for cell sky130_fd_sc_hd__bufinv_16 from $PDKPATH/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds

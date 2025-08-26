@@ -180,10 +180,10 @@
             "json_h": null
         }
     },
-    "EXTRA_LEFS": [
-        "src/sky130_sram_128B_1rw_32x32.lef"
+    "EXTRA_LEFS": null,
+    "EXTRA_VERILOG_MODELS": [
+        "src/sky130_sram_128B_1rw_32x32.v"
     ],
-    "EXTRA_VERILOG_MODELS": null,
     "EXTRA_SPICE_MODELS": null,
     "EXTRA_LIBS": null,
     "EXTRA_GDS_FILES": null,

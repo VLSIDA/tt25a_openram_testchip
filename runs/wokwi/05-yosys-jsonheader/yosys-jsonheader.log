@@ -7,8 +7,8 @@
  Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
 Loaded SDC plugin
 
-1. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/a5b56ef36a1d4005b7fa913a14b2ddb8.bb.v
-Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/a5b56ef36a1d4005b7fa913a14b2ddb8.bb.v' to AST representation.
+1. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/8aea2a6dde4c46dba9c390dde03e42c1.bb.v
+Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/8aea2a6dde4c46dba9c390dde03e42c1.bb.v' to AST representation.
 Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_12'.
 Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_12'.
 Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_4'.
@@ -457,55 +457,59 @@ Parsing SystemVerilog input from `src/sky130_sram_128B_1rw_32x32.v' to AST repre
 Generating RTLIL representation for module `\sky130_sram_128B_1rw_32x32'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/defs.v
+3. Executing Verilog-2005 frontend: src/sky130_sram_128B_1rw_32x32.v
+Parsing SystemVerilog input from `src/sky130_sram_128B_1rw_32x32.v' to AST representation.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/defs.v
 Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/defs.v' to AST representation.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/project.v
+5. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/project.v
 Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/project.v' to AST representation.
 Storing AST representation for module `$abstract\scan_cell_2ph'.
 Storing AST representation for module `$abstract\scan_chain_2ph'.
 Storing AST representation for module `$abstract\tt_um_openram_top'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v
+6. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v
 Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v' to AST representation.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v
+7. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v
 Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/scan_chain_2ph.v' to AST representation.
 Successfully finished Verilog frontend.
 
-7. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/sky130_sram_128B_1rw_32x32.v
+8. Executing Verilog-2005 frontend: /workspaces/tt25a_openram_testchip/src/sky130_sram_128B_1rw_32x32.v
 Parsing SystemVerilog input from `/workspaces/tt25a_openram_testchip/src/sky130_sram_128B_1rw_32x32.v' to AST representation.
 Successfully finished Verilog frontend.
 
-8. Executing HIERARCHY pass (managing design hierarchy).
+9. Executing HIERARCHY pass (managing design hierarchy).
 
-9. Executing AST frontend in derive mode using pre-parsed AST for module `\tt_um_openram_top'.
+10. Executing AST frontend in derive mode using pre-parsed AST for module `\tt_um_openram_top'.
 Generating RTLIL representation for module `\tt_um_openram_top'.
 
-9.1. Analyzing design hierarchy..
+10.1. Analyzing design hierarchy..
 Top module:  \tt_um_openram_top
 Parameter 1 (\CHAIN_LENGTH) = 72
 
-9.2. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_chain_2ph'.
+10.2. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_chain_2ph'.
 Parameter 1 (\CHAIN_LENGTH) = 72
 Generating RTLIL representation for module `$paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000'.
 
-9.3. Analyzing design hierarchy..
+10.3. Analyzing design hierarchy..
 Top module:  \tt_um_openram_top
 Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
 
-9.4. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_cell_2ph'.
+10.4. Executing AST frontend in derive mode using pre-parsed AST for module `\scan_cell_2ph'.
 Generating RTLIL representation for module `\scan_cell_2ph'.
 
-9.5. Analyzing design hierarchy..
+10.5. Analyzing design hierarchy..
 Top module:  \tt_um_openram_top
 Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
 Used module:         \scan_cell_2ph
 
-9.6. Analyzing design hierarchy..
+10.6. Analyzing design hierarchy..
 Top module:  \tt_um_openram_top
 Used module:     $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000
 Used module:         \scan_cell_2ph
@@ -515,50 +519,50 @@ Removing unused module `$abstract\scan_cell_2ph'.
 Removed 3 unused modules.
 Renaming module tt_um_openram_top to tt_um_openram_top.
 
-10. Executing PROC pass (convert processes to netlists).
+11. Executing PROC pass (convert processes to netlists).
 
-10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+11.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Cleaned up 0 empty switches.
 
-10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+11.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
 Marked 2 switch rules as full_case in process $proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9 in module scan_cell_2ph.
 Marked 2 switch rules as full_case in process $proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7 in module scan_cell_2ph.
 Removed a total of 0 dead cases.
 
-10.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+11.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
 Removed 0 redundant assignments.
 Promoted 2 assignments to connections.
 
-10.4. Executing PROC_INIT pass (extract init attributes).
+11.4. Executing PROC_INIT pass (extract init attributes).
 
-10.5. Executing PROC_ARST pass (detect async resets in processes).
+11.5. Executing PROC_ARST pass (detect async resets in processes).
 Found async reset \rst_n in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
 Found async reset \rst_n in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
 
-10.6. Executing PROC_ROM pass (convert switches to ROMs).
+11.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~4 debug messages>
 
-10.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+11.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
 Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
 Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
      1/1: $0\secondary_ff[0:0]
 Creating decoders for process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
      1/1: $0\primary_ff[0:0]
 
-10.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+11.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 No latch inferred for signal `\scan_cell_2ph.\scan_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
 No latch inferred for signal `\scan_cell_2ph.\data_out' from process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
 
-10.9. Executing PROC_DFF pass (convert process syncs to FFs).
+11.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\scan_cell_2ph.\secondary_ff' using process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
   created $adff cell `$procdff$26' with positive edge clock and positive level reset.
 Creating register for signal `\scan_cell_2ph.\primary_ff' using process `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
   created $adff cell `$procdff$31' with positive edge clock and positive level reset.
 
-10.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+11.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
-10.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+11.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:46$11'.
 Found and cleaned up 2 empty switches in `\scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
 Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:34$9'.
@@ -566,19 +570,19 @@ Found and cleaned up 2 empty switches in `\scan_cell_2ph.$proc$/workspaces/tt25a
 Removing empty process `scan_cell_2ph.$proc$/workspaces/tt25a_openram_testchip/src/scan_cell_2ph.v:23$7'.
 Cleaned up 4 empty switches.
 
-10.12. Executing OPT_EXPR pass (perform const folding).
+11.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module tt_um_openram_top.
 <suppressed ~1 debug messages>
 Optimizing module $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000.
 Optimizing module scan_cell_2ph.
 <suppressed ~4 debug messages>
 
-11. Executing FLATTEN pass (flatten design).
+12. Executing FLATTEN pass (flatten design).
 Deleting now unused module $paramod\scan_chain_2ph\CHAIN_LENGTH=s32'00000000000000000000000001001000.
 Deleting now unused module scan_cell_2ph.
 <suppressed ~73 debug messages>
 
-12. Executing OPT_CLEAN pass (remove unused cells and wires).
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \tt_um_openram_top..
 Removed 361 unused cells and 1681 unused wires.
 <suppressed ~1034 debug messages>

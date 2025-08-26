@@ -57,7 +57,7 @@ set ::env(VDD_NETS) VPWR
 set ::env(GND_NETS) VGND
 set ::env(DIE_AREA) "0 0 334.88 225.76"
 set ::env(MACROS) "sky130_sram_128B_1rw_32x32 \"gds src/sky130_sram_128B_1rw_32x32.gds lef src/sky130_sram_128B_1rw_32x32.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_128B_1rw_32x32.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
-set ::env(EXTRA_LEFS) src/sky130_sram_128B_1rw_32x32.lef
+set ::env(EXTRA_VERILOG_MODELS) src/sky130_sram_128B_1rw_32x32.v
 set ::env(FALLBACK_SDC_FILE) src/project.sdc
 set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
 set ::env(PDN_MACRO_CONNECTIONS) "\"SRAM vccd1 vssd1 VPWR VGND\""
@@ -128,7 +128,7 @@ set ::env(VDD_NETS) VPWR
 set ::env(GND_NETS) VGND
 set ::env(DIE_AREA) "0 0 334.88 225.76"
 set ::env(MACROS) "sky130_sram_128B_1rw_32x32 \"gds src/sky130_sram_128B_1rw_32x32.gds lef src/sky130_sram_128B_1rw_32x32.lef instances \\\"SRAM \\\\\\\"location \\\\\\\\\\\\\\\"2 10\\\\\\\\\\\\\\\" orientation S\\\\\\\"\\\" vh \\\"\\\" nl src/sky130_sram_128B_1rw_32x32.v pnl \\\"\\\" spef \\\"\\\" lib \\\"\\\" spice \\\"\\\" sdf \\\"\\\" json_h None\""
-set ::env(EXTRA_LEFS) src/sky130_sram_128B_1rw_32x32.lef
+set ::env(EXTRA_VERILOG_MODELS) src/sky130_sram_128B_1rw_32x32.v
 set ::env(FALLBACK_SDC_FILE) src/project.sdc
 set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
 set ::env(PDN_MACRO_CONNECTIONS) "\"SRAM vccd1 vssd1 VPWR VGND\""
