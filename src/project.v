@@ -5,7 +5,7 @@
 
 `default_nettype none
 //`timescale 1ns / 1ps
-`include "sky130_sram_256B_1rw_32x64.v"
+`include "sky130_sram_128B_1rw_32x32.v"
 `include "scan_chain_2ph.v"
 `include "defs.v"
 module tt_um_openram_top (
@@ -57,7 +57,7 @@ assign uo_out[1] = scan_data_out[0];
 assign uo_out[0] = scan_out;
 
 
-sky130_sram_256B_1rw_32x64 SRAM 
+sky130_sram_128B_1rw_32x32 SRAM 
     (
     `ifdef USE_POWER_PINS
     .vccd1(VPWR),

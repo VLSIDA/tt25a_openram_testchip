@@ -34,11 +34,11 @@
   "CLOCK_NET": ["ui_in[3]", "ui_in[4]"],
   "FALLBACK_SDC_FILE": "src/project.sdc",
   "DESIGN_NAME" : "tt_um_openram_top",
-  "EXTRA_LEFS" : ["src/sky130_sram_256B_1rw_32x64.lef"],
-  "EXTRA_GDS" : ["src/sky130_sram_256B_1rw_32x64.gds"],
+  "EXTRA_LEFS" : ["src/sky130_sram_128B_1rw_32x32.lef"],
+  "EXTRA_GDS" : ["src/sky130_sram_128B_1rw_32x32.gds"],
 
     "MACROS": {
-        "sky130_sram_256B_1rw_32x64": {
+        "sky130_sram_128B_1rw_32x32": {
             "instances": {
                 "SRAM": {
                     "location": [
@@ -49,13 +49,13 @@
                 }
             },
             "gds": [
-                "src/sky130_sram_256B_1rw_32x64.gds"
+                "src/sky130_sram_128B_1rw_32x32.gds"
             ],
             "lef": [
-                "src/sky130_sram_256B_1rw_32x64.lef"
+                "src/sky130_sram_128B_1rw_32x32.lef"
             ],
             "nl": [
-                "src/sky130_sram_256B_1rw_32x64.v"
+                "src/sky130_sram_128B_1rw_32x32.v"
             ],
             "lib": {},
             "spice": [],
