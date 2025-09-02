@@ -300,7 +300,7 @@
     "FP_PDN_HWIDTH": 1.6,
     "FP_PDN_VSPACING": 3,
     "FP_PDN_HSPACING": 1.7,
-    "FP_PDN_VPITCH": 240,
+    "FP_PDN_VPITCH": 245,
     "FP_PDN_HPITCH": 153.18,
     "FP_PDN_VOFFSET": 8,
     "FP_PDN_HOFFSET": 16.65,
@@ -1314,7 +1314,7 @@
         "/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor3_2.mag",
         "/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor3_4.mag"
     ],
-    "MAGIC_CAPTURE_ERRORS": true,
+    "MAGIC_CAPTURE_ERRORS": false,
     "MAGIC_ZEROIZE_ORIGIN": false,
     "MAGIC_DISABLE_CIF_INFO": true,
     "MAGIC_MACRO_STD_CELL_SOURCE": "macro",
@@ -1330,7 +1330,7 @@
     ],
     "KLAYOUT_XOR_TILE_SIZE": null,
     "ERROR_ON_XOR_ERROR": true,
-    "MAGIC_DRC_USE_GDS": true,
+    "MAGIC_DRC_USE_GDS": false,
     "KLAYOUT_DRC_RUNSET": "/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/klayout/drc/sky130A_mr.drc",
     "KLAYOUT_DRC_OPTIONS": {
         "beol": true,

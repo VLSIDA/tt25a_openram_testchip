@@ -74,7 +74,7 @@ set ::env(FP_PDN_VWIDTH) 1.6
 set ::env(FP_PDN_HWIDTH) 1.6
 set ::env(FP_PDN_VSPACING) 3
 set ::env(FP_PDN_HSPACING) 1.7
-set ::env(FP_PDN_VPITCH) 240
+set ::env(FP_PDN_VPITCH) 245
 set ::env(FP_PDN_HPITCH) 153.18
 set ::env(FP_PDN_VOFFSET) 8
 set ::env(FP_PDN_HOFFSET) 16.65

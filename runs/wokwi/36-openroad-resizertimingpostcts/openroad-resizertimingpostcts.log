@@ -11,26 +11,26 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO] No information on clock propagation in input SDC file-- propagating all clocks.
 [INFO] Setting RC values…
 [INFO RSZ-0098] No setup violations found
-[INFO RSZ-0046] Found 183 endpoints with hold violations.
+[INFO RSZ-0046] Found 184 endpoints with hold violations.
 Iteration | Resized | Buffers | Cloned Gates |   WNS   |   TNS   | Endpoint
 ---------------------------------------------------------------------------
-        0 |       0 |       0 |            0 |  -0.877 | -30.688 | _511_/RESET_B
-    final |       0 |     112 |            0 |   0.102 |  -0.000 | _565_/D
+        0 |       0 |       0 |            0 |  -0.866 | -30.252 | _509_/RESET_B
+    final |       0 |     113 |            0 |   0.104 |  -0.000 | _541_/D
 ---------------------------------------------------------------------------
-[INFO RSZ-0032] Inserted 112 hold buffers.
+[INFO RSZ-0032] Inserted 113 hold buffers.
 Placement Analysis
 ---------------------------------
-total displacement        980.2 u
-average displacement        1.0 u
-max displacement           20.7 u
-original HPWL           26254.7 u
-legalized HPWL          27331.2 u
+total displacement        880.4 u
+average displacement        0.9 u
+max displacement           18.4 u
+original HPWL           25824.2 u
+legalized HPWL          26836.0 u
 delta HPWL                    4 %
 
-[INFO DPL-0020] Mirrored 228 instances
-[INFO DPL-0021] HPWL before           27331.2 u
-[INFO DPL-0022] HPWL after            26876.6 u
-[INFO DPL-0023] HPWL delta               -1.7 %
+[INFO DPL-0020] Mirrored 223 instances
+[INFO DPL-0021] HPWL before           26836.0 u
+[INFO DPL-0022] HPWL after            26278.6 u
+[INFO DPL-0023] HPWL delta               -2.1 %
 [INFO] Setting RC values…
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -41,12 +41,12 @@ Cell type report:                       Count       Area
   Fill cell                               162     608.08
   Tap cell                                200     250.24
   Buffer                                    2      10.01
-  Clock buffer                             21     491.72
+  Clock buffer                             21     485.47
   Timing Repair Buffer                    168    1485.17
-  Clock inverter                           10      93.84
-  Sequential cell                         144    3677.28
+  Clock inverter                           11     100.10
+  Sequential cell                         144    3678.53
   Multi-Input combinational cell          272    2892.77
-  Total                                   980   61569.77
+  Total                                   981   61571.02
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/36-openroad-resizertimingpostcts/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/36-openroad-resizertimingpostcts/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/36-openroad-resizertimingpostcts/tt_um_openram_top.pnl.v'…

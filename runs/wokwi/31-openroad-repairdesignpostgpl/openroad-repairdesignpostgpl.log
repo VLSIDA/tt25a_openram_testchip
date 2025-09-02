@@ -50,40 +50,40 @@ Iteration | Resized | Buffers | Nets repaired | Remaining
       330 |      75 |       0 |             0 |       166
       340 |      85 |       0 |             0 |       156
       350 |      95 |       0 |             0 |       146
-      360 |     103 |       0 |             0 |       136
-      370 |     110 |       0 |             0 |       126
-      380 |     120 |       0 |             0 |       116
-      390 |     130 |       0 |             0 |       106
-      400 |     171 |      32 |             3 |        96
-      410 |     192 |      52 |             4 |        86
-      420 |     192 |      52 |             4 |        76
-      430 |     192 |      52 |             4 |        66
-      440 |     192 |      52 |             4 |        56
-      450 |     192 |      52 |             4 |        46
-      460 |     192 |      52 |             4 |        36
-      470 |     192 |      52 |             4 |        26
-      480 |     192 |      52 |             4 |        16
-      490 |     192 |      52 |             4 |         6
-    final |     192 |      52 |             4 |         0
+      360 |     102 |       0 |             0 |       136
+      370 |     109 |       0 |             0 |       126
+      380 |     119 |       0 |             0 |       116
+      390 |     129 |       0 |             0 |       106
+      400 |     169 |      32 |             3 |        96
+      410 |     189 |      51 |             4 |        86
+      420 |     189 |      51 |             4 |        76
+      430 |     189 |      51 |             4 |        66
+      440 |     189 |      51 |             4 |        56
+      450 |     189 |      51 |             4 |        46
+      460 |     189 |      51 |             4 |        36
+      470 |     189 |      51 |             4 |        26
+      480 |     189 |      51 |             4 |        16
+      490 |     189 |      51 |             4 |         6
+    final |     189 |      51 |             4 |         0
 ---------------------------------------------------------
 [INFO RSZ-0034] Found 1 slew violations.
 [INFO RSZ-0035] Found 4 fanout violations.
-[INFO RSZ-0038] Inserted 52 buffers in 4 nets.
-[INFO RSZ-0039] Resized 192 instances.
+[INFO RSZ-0038] Inserted 51 buffers in 4 nets.
+[INFO RSZ-0039] Resized 189 instances.
 [INFO RSZ-0042] Inserted 22 tie sky130_fd_sc_hd__conb_1 instances.
 Placement Analysis
 ---------------------------------
-total displacement       2095.5 u
-average displacement        2.5 u
-max displacement          114.8 u
-original HPWL           23074.2 u
-legalized HPWL          24526.8 u
+total displacement       2188.0 u
+average displacement        2.6 u
+max displacement          127.9 u
+original HPWL           22878.7 u
+legalized HPWL          24220.2 u
 delta HPWL                    6 %
 
-[INFO DPL-0020] Mirrored 121 instances
-[INFO DPL-0021] HPWL before           24526.8 u
-[INFO DPL-0022] HPWL after            24349.3 u
-[INFO DPL-0023] HPWL delta               -0.7 %
+[INFO DPL-0020] Mirrored 125 instances
+[INFO DPL-0021] HPWL before           24220.2 u
+[INFO DPL-0022] HPWL after            23987.5 u
+[INFO DPL-0023] HPWL delta               -1.0 %
 [INFO] Setting RC values…
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
@@ -94,10 +94,10 @@ Cell type report:                       Count       Area
   Fill cell                               162     608.08
   Tap cell                                200     250.24
   Buffer                                    2      10.01
-  Timing Repair Buffer                     56     364.10
-  Sequential cell                         144    3677.28
+  Timing Repair Buffer                     55     354.09
+  Sequential cell                         144    3678.53
   Multi-Input combinational cell          272    2892.77
-  Total                                   837   59863.13
+  Total                                   836   59854.37
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/31-openroad-repairdesignpostgpl/tt_um_openram_top.pnl.v'…

@@ -1,1 +1,1 @@
-{"blackbox_models": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/8aea2a6dde4c46dba9c390dde03e42c1.bb.v", "src/sky130_sram_128B_1rw_32x32.v", "src/sky130_sram_128B_1rw_32x32.v"], "libs_synth": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/0beca7aede1d49eb89c9b46d9e069020.lib"]}
+{"blackbox_models": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/f07d2ed572124d3daa2c6c300f597838.bb.v", "src/sky130_sram_128B_1rw_32x32.v", "src/sky130_sram_128B_1rw_32x32.v"], "libs_synth": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/ac6d2e960ad84fa5971dcfb2cd5ff987.lib"]}

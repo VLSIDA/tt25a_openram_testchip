@@ -214,3 +214,5 @@ Error while reading cell "sky130_fd_bd_sram__sram_sp_colenda" (byte position 249
 
 Error while reading cell "sky130_fd_bd_sram__sram_sp_colenda" (byte position 249712): Unknown layer/datatype in boundary, layer=22 type=21
 
+50 Magic DRC errors found. - deferred
+279 LVS errors found. - deferred

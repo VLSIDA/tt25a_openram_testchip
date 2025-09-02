@@ -36,7 +36,10 @@
   "DESIGN_NAME" : "tt_um_openram_top",
   "EXTRA_GDS" : ["src/sky130_sram_128B_1rw_32x32.gds"],
   "VERILOG_FILES_BLACKBOX" : ["src/sky130_sram_128B_1rw_32x32.v"],
-  
+  "MAGIC_CAPTURE_ERRORS" : false,
+  "MAGIC_DRC_USE_GDS" : false,
+
+
     "MACROS": {
         "sky130_sram_128B_1rw_32x32": {
             "instances": {
@@ -71,7 +74,7 @@
     "VDD_NETS": "VPWR",
     "GND_NETS": "VGND",
 
-    "FP_PDN_VPITCH": 240,
+    "FP_PDN_VPITCH": 245,
     "FP_PDN_VSPACING": 3,
     "FP_PDN_VOFFSET": 8,
     

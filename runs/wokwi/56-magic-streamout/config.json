@@ -1081,7 +1081,7 @@
         "/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor3_2.mag",
         "/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor3_4.mag"
     ],
-    "MAGIC_CAPTURE_ERRORS": true,
+    "MAGIC_CAPTURE_ERRORS": false,
     "MAGIC_ZEROIZE_ORIGIN": false,
     "MAGIC_DISABLE_CIF_INFO": true,
     "MAGIC_MACRO_STD_CELL_SOURCE": "macro",

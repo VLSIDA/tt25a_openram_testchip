@@ -22,44 +22,44 @@ Reading design constraints file at 'src/project.sdc'…
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0003] Macros: 1
 [INFO GRT-0043] No OR_DEFAULT vias defined.
-[INFO GRT-0004] Blockages: 2090
+[INFO GRT-0004] Blockages: 2105
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal      31712          4831          84.77%
-met2       Vertical        23056          4180          81.87%
-met3       Horizontal      15856          2971          81.26%
-met4       Vertical        10768          1681          84.39%
+met1       Horizontal      31712          4824          84.79%
+met2       Vertical        23056          4179          81.87%
+met3       Horizontal      15856          2972          81.26%
+met4       Vertical        10768          1678          84.42%
 ---------------------------------------------------------------
 
 [INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 3275
-[INFO GRT-0198] Via related Steiner nodes: 55
+[INFO GRT-0197] Via related to pin nodes: 3211
+[INFO GRT-0198] Via related Steiner nodes: 66
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 4482
-[INFO GRT-0112] Final usage 3D: 17773
+[INFO GRT-0111] Final number of vias: 4389
+[INFO GRT-0112] Final usage 3D: 17396
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              4831          1832           37.92%             0 /  0 /  0
-met2              4180          1419           33.95%             0 /  0 /  0
-met3              2971           865           29.11%             0 /  0 /  0
-met4              1681           211           12.55%             0 /  0 /  0
+met1              4824          1743           36.13%             0 /  0 /  0
+met2              4179          1350           32.30%             0 /  0 /  0
+met3              2972           901           30.32%             0 /  0 /  0
+met4              1678           235           14.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            13663          4327           31.67%             0 /  0 /  0
+Total            13653          4229           30.97%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 42062 um
+[INFO GRT-0018] Total wirelength: 41206 um
 [INFO GRT-0014] Routed nets: 650
 [INFO GRT-0006] Repairing antennas, iteration 1.
 [INFO GRT-0043] No OR_DEFAULT vias defined.
 [INFO GRT-0012] Found 27 antenna violations.
-[INFO GRT-0015] Inserted 33 diodes.
-[INFO GRT-0009] rerouting 247 nets.
+[INFO GRT-0015] Inserted 34 diodes.
+[INFO GRT-0009] rerouting 262 nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0006] Repairing antennas, iteration 2.
@@ -70,14 +70,14 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           27667.0 u
-legalized HPWL          27691.8 u
+original HPWL           27114.9 u
+legalized HPWL          27146.2 u
 delta HPWL                    0 %
 
-[INFO DPL-0020] Mirrored 245 instances
-[INFO DPL-0021] HPWL before           27691.8 u
-[INFO DPL-0022] HPWL after            27252.5 u
-[INFO DPL-0023] HPWL delta               -1.6 %
+[INFO DPL-0020] Mirrored 247 instances
+[INFO DPL-0021] HPWL before           27146.2 u
+[INFO DPL-0022] HPWL after            26590.2 u
+[INFO DPL-0023] HPWL delta               -2.0 %
 -congestion_iterations 50 -verbose -allow_congestion
 [INFO GRT-0020] Min routing layer: met1
 [INFO GRT-0021] Max routing layer: met4
@@ -94,38 +94,38 @@ delta HPWL                    0 %
 [INFO GRT-0002] Maximum degree: 14
 [INFO GRT-0003] Macros: 1
 [INFO GRT-0043] No OR_DEFAULT vias defined.
-[INFO GRT-0004] Blockages: 2090
+[INFO GRT-0004] Blockages: 2105
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal      31712          4828          84.78%
-met2       Vertical        23056          4180          81.87%
-met3       Horizontal      15856          2971          81.26%
-met4       Vertical        10768          1681          84.39%
+met1       Horizontal      31712          4821          84.80%
+met2       Vertical        23056          4179          81.87%
+met3       Horizontal      15856          2972          81.26%
+met4       Vertical        10768          1678          84.42%
 ---------------------------------------------------------------
 
 [INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 3329
-[INFO GRT-0198] Via related Steiner nodes: 62
+[INFO GRT-0197] Via related to pin nodes: 3281
+[INFO GRT-0198] Via related Steiner nodes: 59
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 4632
-[INFO GRT-0112] Final usage 3D: 18345
+[INFO GRT-0111] Final number of vias: 4492
+[INFO GRT-0112] Final usage 3D: 17764
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              4828          1808           37.45%             0 /  0 /  0
-met2              4180          1427           34.14%             0 /  0 /  0
-met3              2971           950           31.98%             0 /  0 /  0
-met4              1681           264           15.70%             0 /  0 /  0
+met1              4821          1810           37.54%             0 /  0 /  0
+met2              4179          1352           32.35%             0 /  0 /  0
+met3              2972           862           29.00%             0 /  0 /  0
+met4              1678           264           15.73%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total            13660          4449           32.57%             0 /  0 /  0
+Total            13650          4288           31.41%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 43628 um
+[INFO GRT-0018] Total wirelength: 41945 um
 [INFO GRT-0014] Routed nets: 650
 [INFO] Setting RC values…
 Setting global connections for newly added cells…
@@ -136,13 +136,13 @@ Cell type report:                       Count       Area
   Macro                                     1   52060.65
   Fill cell                               162     608.08
   Tap cell                                200     250.24
-  Antenna cell                             33      82.58
+  Antenna cell                             34      85.08
   Buffer                                    2      10.01
-  Clock buffer                             21     491.72
+  Clock buffer                             21     485.47
   Timing Repair Buffer                    168    1485.17
-  Clock inverter                           10      93.84
-  Sequential cell                         144    3677.28
+  Clock inverter                           11     100.10
+  Sequential cell                         144    3678.53
   Multi-Input combinational cell          272    2892.77
-  Total                                  1013   61652.35
+  Total                                  1015   61656.10
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/41-openroad-repairantennas/1-diodeinsertion/tt_um_openram_top.odb'…
 Writing layout to '/workspaces/tt25a_openram_testchip/runs/wokwi/41-openroad-repairantennas/1-diodeinsertion/tt_um_openram_top.def'…

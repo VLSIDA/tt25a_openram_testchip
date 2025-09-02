@@ -18,9 +18,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file src/sky130_sram_128
 [INFO ODB-0127] Reading DEF file: /workspaces/tt25a_openram_testchip/runs/wokwi/52-odb-cellfrequencytables/tt_um_openram_top.def
 [INFO ODB-0128] Design: tt_um_openram_top
 [INFO ODB-0130]     Created 45 pins.
-[INFO ODB-0131]     Created 1791 components and 8896 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 6762 connections.
-[INFO ODB-0133]     Created 656 nets and 2099 connections.
+[INFO ODB-0131]     Created 1775 components and 8835 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 6698 connections.
+[INFO ODB-0133]     Created 656 nets and 2101 connections.
 [INFO ODB-0134] Finished DEF file: /workspaces/tt25a_openram_testchip/runs/wokwi/52-odb-cellfrequencytables/tt_um_openram_top.def
 Using RCX ruleset '/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre'…
 [INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
@@ -30,19 +30,19 @@ Using RCX ruleset '/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb67
 [INFO RCX-0040] Final 2448 rc segments
 [INFO RCX-0439] Coupling Cap extraction tt_um_openram_top ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0442] 53% of 5276 wires extracted
-[INFO RCX-0442] 100% of 5276 wires extracted
-[INFO RCX-0045] Extract 658 nets, 3098 rsegs, 3098 caps, 5956 ccs
+[INFO RCX-0442] 53% of 5116 wires extracted
+[INFO RCX-0442] 100% of 5116 wires extracted
+[INFO RCX-0045] Extract 658 nets, 3098 rsegs, 3098 caps, 5905 ccs
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 SRAM matched with SRAM
 Updating metrics…
 Cell type report:                       Count       Area
   Macro                                     1   52060.65
-  Fill cell                               940    6157.16
+  Fill cell                               922    6153.40
   Tap cell                                200     250.24
-  Antenna cell                             33      82.58
-  Standard cell                           617    8650.80
-  Total                                  1791   67201.42
+  Antenna cell                             34      85.08
+  Standard cell                           618    8652.05
+  Total                                  1775   67201.42
 Writing extracted parasitics to '/workspaces/tt25a_openram_testchip/runs/wokwi/53-openroad-rcx/min/tt_um_openram_top.min.spef'…
 [INFO RCX-0443] 656 nets finished

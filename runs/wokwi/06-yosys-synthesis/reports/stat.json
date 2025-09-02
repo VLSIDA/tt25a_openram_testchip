@@ -1,6 +1,6 @@
 {
    "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
-   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/0beca7aede1d49eb89c9b46d9e069020.lib ",
+   "invocation": "stat -json -liberty /workspaces/tt25a_openram_testchip/runs/wokwi/tmp/ac6d2e960ad84fa5971dcfb2cd5ff987.lib ",
    "modules": {
       "\\tt_um_openram_top": {
          "num_wires":         435,

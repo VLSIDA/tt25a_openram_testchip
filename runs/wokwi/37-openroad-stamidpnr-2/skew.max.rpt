@@ -2,22 +2,22 @@
 ===========================================================================
 Clock Skew (Setup)
 ============================================================================
-Writing metric clock__skew__worst_setup__corner:nom_tt_025C_1v80: 0.2556081252340489
+Writing metric clock__skew__worst_setup__corner:nom_tt_025C_1v80: 0.2582220899083056
 ======================= nom_tt_025C_1v80 Corner ===================================
 
 Clock sclka
-0.404722 source latency _619_/CLK ^
--0.399114 target latency _616_/CLK ^
+0.406617 source latency _559_/CLK ^
+-0.398395 target latency _556_/CLK ^
 0.250000 clock uncertainty
 0.000000 CRPR
 --------------
-0.255608 setup skew
+0.258222 setup skew
 
 Clock sclkb
-0.404586 source latency _576_/CLK ^
--0.403746 target latency _577_/CLK ^
+0.402750 source latency _640_/CLK ^
+-0.401510 target latency _585_/CLK ^
 0.250000 clock uncertainty
 0.000000 CRPR
 --------------
-0.250840 setup skew
+0.251240 setup skew
 

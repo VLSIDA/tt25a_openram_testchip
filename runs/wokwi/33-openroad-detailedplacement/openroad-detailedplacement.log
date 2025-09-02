@@ -9,14 +9,14 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           24349.3 u
-legalized HPWL          24526.8 u
+original HPWL           23987.5 u
+legalized HPWL          24220.2 u
 delta HPWL                    1 %
 
-[INFO DPL-0020] Mirrored 121 instances
-[INFO DPL-0021] HPWL before           24526.8 u
-[INFO DPL-0022] HPWL after            24349.3 u
-[INFO DPL-0023] HPWL delta               -0.7 %
+[INFO DPL-0020] Mirrored 125 instances
+[INFO DPL-0021] HPWL before           24220.2 u
+[INFO DPL-0022] HPWL after            23987.5 u
+[INFO DPL-0023] HPWL delta               -1.0 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 SRAM matched with SRAM
@@ -26,10 +26,10 @@ Cell type report:                       Count       Area
   Fill cell                               162     608.08
   Tap cell                                200     250.24
   Buffer                                    2      10.01
-  Timing Repair Buffer                     56     364.10
-  Sequential cell                         144    3677.28
+  Timing Repair Buffer                     55     354.09
+  Sequential cell                         144    3678.53
   Multi-Input combinational cell          272    2892.77
-  Total                                   837   59863.13
+  Total                                   836   59854.37
 Writing OpenROAD database to '/workspaces/tt25a_openram_testchip/runs/wokwi/33-openroad-detailedplacement/tt_um_openram_top.odb'…
 Writing netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/33-openroad-detailedplacement/tt_um_openram_top.nl.v'…
 Writing powered netlist to '/workspaces/tt25a_openram_testchip/runs/wokwi/33-openroad-detailedplacement/tt_um_openram_top.pnl.v'…
