@@ -30,7 +30,7 @@ parameter WMASK_WIDTH = 4;
 parameter SCAN_WIDTH = ADDR_WIDTH + DATA_WIDTH + DATA_WIDTH;
 
   // All output pins must be assigned. If not used, assign to 0.
-assign uo_out[7:2] = 0;
+
 assign uio_out = 0;
 assign uio_oe = 0;
 
@@ -42,7 +42,6 @@ wire [SCAN_WIDTH-1:0] scan_data_out;
 wire scan_out;
 
 wire scan_in, scan_enable, scan_mode, csb, web, sclka, sclkb, spare_wen;
-assign spare_wen = ui_in[7];
 assign web = ui_in[6];
 assign csb = ui_in[5];
 assign sclkb = ui_in[4];
@@ -53,6 +52,7 @@ assign scan_in = ui_in[0]; //input value
 
 assign wmask = {uio_in[WMASK_WIDTH-1:0]};
 
+assign uo_out[7:2] = 0;assign uo_out[7:2] = 0;
 assign uo_out[1] = scan_data_out[0];
 assign uo_out[0] = scan_out;
 
@@ -88,6 +88,6 @@ assign addr = scan_data_out[SCAN_WIDTH-1:SCAN_WIDTH-ADDR_WIDTH];
 assign din = scan_data_out[SCAN_WIDTH-ADDR_WIDTH-1:SCAN_WIDTH-DATA_WIDTH-ADDR_WIDTH];
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, clk, rst_n, 1'b0};
+  wire _unused = &{ena, clk, rst_n, 1'b0, ui_in[7:4]};
 
 endmodule

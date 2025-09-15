@@ -34,9 +34,9 @@ async def test_project(dut):
             
     dut._log.info("Start")
 
-    ADDR_WIDTH = 9
+    ADDR_WIDTH = 4
     ADDR_VAL = 0x123
-    DATA_WIDTH = 33
+    DATA_WIDTH = 32
     DATA_VAL = 0x123456789
     SCAN_FF_WIDTH = (ADDR_WIDTH + DATA_WIDTH + DATA_WIDTH)*2
     
