@@ -41,7 +41,7 @@ wire [WMASK_WIDTH-1:0] wmask;
 wire [SCAN_WIDTH-1:0] scan_data_out;
 wire scan_out;
 
-wire scan_in, scan_enable, scan_mode, csb, web, sclka, sclkb, spare_wen;
+wire scan_in, scan_enable, scan_mode, csb, web, sclka, sclkb;
 assign web = ui_in[6];
 assign csb = ui_in[5];
 assign sclkb = ui_in[4];
@@ -52,7 +52,7 @@ assign scan_in = ui_in[0]; //input value
 
 assign wmask = {uio_in[WMASK_WIDTH-1:0]};
 
-assign uo_out[7:2] = 0;assign uo_out[7:2] = 0;
+assign uo_out[7:2] = 0;
 assign uo_out[1] = scan_data_out[0];
 assign uo_out[0] = scan_out;
 
