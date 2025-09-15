@@ -76,8 +76,8 @@
     "GND_NETS": "VGND",
 
     "FP_PDN_VPITCH": 245,
-    "FP_PDN_VSPACING": 3,
-    "FP_PDN_VOFFSET": 8,
+    "FP_PDN_VSPACING": 2.5,
+    "FP_PDN_VOFFSET": 9,
     
     "FP_PDN_VERTICAL_HALO": 0,
     "FP_PDN_HORIZONTAL_HALO": 0,
