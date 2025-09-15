@@ -11,6 +11,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 A simple design with a 16x32 OpenRAM generated 1rw macro using two phased clocking to avoid potential hold violations.
 
+Supports clocks up to 250Mhz
+
 ## How to test
 
 assign web = ui_in[6]; //

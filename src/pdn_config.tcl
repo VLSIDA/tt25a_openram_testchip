@@ -57,7 +57,7 @@ if { $::env(FP_PDN_MULTILAYER) == 1 } {
         -pitch $::env(FP_PDN_VPITCH) \
         -offset $::env(FP_PDN_VOFFSET) \
         -spacing $::env(FP_PDN_VSPACING) \
-        -starts_with POWER -extend_to_boundary
+        -starts_with POWER -extend_to_core_ring
 
     add_pdn_stripe \
         -grid stdcell_grid \
@@ -66,7 +66,7 @@ if { $::env(FP_PDN_MULTILAYER) == 1 } {
         -pitch $::env(FP_PDN_HPITCH) \
         -offset $::env(FP_PDN_HOFFSET) \
         -spacing $::env(FP_PDN_HSPACING) \
-        -starts_with POWER -extend_to_boundary
+        -starts_with POWER -extend_to_core_ring
 
     add_pdn_connect \
         -grid stdcell_grid \
@@ -85,7 +85,7 @@ if { $::env(FP_PDN_MULTILAYER) == 1 } {
         -pitch $::env(FP_PDN_VPITCH) \
         -offset $::env(FP_PDN_VOFFSET) \
         -spacing $::env(FP_PDN_VSPACING) \
-        -starts_with POWER -extend_to_boundary
+        -starts_with POWER -extend_to_core_ring
 }
 
 # Adds the standard cell rails if enabled.
