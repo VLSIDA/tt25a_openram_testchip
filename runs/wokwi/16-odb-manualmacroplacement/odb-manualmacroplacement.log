@@ -1,6 +1,0 @@
-[WARNING ORD-0039] .openroad ignored with -python
-Placing the following macros:
-{'SRAM': ['SRAM', 2000, 10000, 'S']}
-Design name: tt_um_openram_top
-Placing SRAM
-Successfully placed 1 instances.

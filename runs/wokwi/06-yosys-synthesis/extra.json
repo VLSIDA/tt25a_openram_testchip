@@ -1,1 +1,0 @@
-{"blackbox_models": ["/home/vscode/ttsetup/pdk/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib", "src/sky130_sram_128B_1rw_32x32.v", "src/sky130_sram_128B_1rw_32x32.v"], "libs_synth": ["/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/ac6d2e960ad84fa5971dcfb2cd5ff987.lib"]}

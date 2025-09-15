@@ -1,7 +1,0 @@
-`verilator_config
-lint_off -rule DECLFILENAME
-lint_off -rule EOFNEWLINE
-lint_off -rule UNDRIVEN -file "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/f07d2ed572124d3daa2c6c300f597838.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/f07d2ed572124d3daa2c6c300f597838.bb.v"
-lint_off -rule UNDRIVEN -file "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/403b65b9c96345e1b2038e151bdcd703.bb.v"
-lint_off -rule UNUSEDSIGNAL -file "/workspaces/tt25a_openram_testchip/runs/wokwi/tmp/403b65b9c96345e1b2038e151bdcd703.bb.v"

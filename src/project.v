@@ -5,7 +5,7 @@
 
 `default_nettype none
 //`timescale 1ns / 1ps
-`include "sky130_sram_128B_1rw_32x32.v"
+`include "sky130_sram_1rw_tiny.v"
 `include "scan_chain_2ph.v"
 `include "defs.v"
 module tt_um_openram_top (
@@ -24,8 +24,8 @@ module tt_um_openram_top (
 
 );
 
-parameter ADDR_WIDTH = 6;
-parameter DATA_WIDTH = 33;
+parameter ADDR_WIDTH = 4;
+parameter DATA_WIDTH = 32;
 parameter WMASK_WIDTH = 4;
 parameter SCAN_WIDTH = ADDR_WIDTH + DATA_WIDTH + DATA_WIDTH;
 
@@ -57,7 +57,7 @@ assign uo_out[1] = scan_data_out[0];
 assign uo_out[0] = scan_out;
 
 
-sky130_sram_128B_1rw_32x32 SRAM 
+sky130_sram_1rw_tiny SRAM 
     (
     `ifdef USE_POWER_PINS
     .vccd1(VPWR),
@@ -69,9 +69,8 @@ sky130_sram_128B_1rw_32x32 SRAM
      .wmask0 (wmask),
      .addr0  (addr),
      .din0   (din),
-     .dout0  (dout),
-     .spare_wen0(spare_wen)
-     );
+     .dout0  (dout)
+);
 
 scan_chain_2ph #(SCAN_WIDTH) scan_chain( //writes on B reads on A
     .phi1(sclka), //clk A
