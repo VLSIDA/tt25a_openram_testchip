@@ -86,6 +86,15 @@ if { $::env(FP_PDN_MULTILAYER) == 1 } {
         -offset $::env(FP_PDN_VOFFSET) \
         -spacing $::env(FP_PDN_VSPACING) \
         -starts_with POWER -extend_to_core_ring
+
+    add_pdn_stripe \
+        -grid stdcell_grid \
+        -layer $::env(FP_PDN_VERTICAL_LAYER) \
+        -width $::env(FP_PDN_VWIDTH) \
+        -pitch $::env(FP_PDN_VPITCH) \
+        -offset 315 \
+        -spacing $::env(FP_PDN_VSPACING) \
+        -starts_with POWER -extend_to_core_ring
 }
 
 # Adds the standard cell rails if enabled.
